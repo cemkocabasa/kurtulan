@@ -1,0 +1,2164 @@
+
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+		<meta http-equiv="expires" content="0" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="cache-control" content="no-cache" />
+		<title>ECTN v1.4.3</title>
+
+		<link rel="stylesheet" href="/ectn-sub/static/scripts/DataTables/DataTables-1.10.12/css/jquery.dataTables.css" type="text/css" media="screen, projection" />	
+		<link rel="stylesheet" href="/ectn-sub/static/scripts/DataTables/Responsive-2.1.0/css/responsive.dataTables.css" type="text/css" media="screen, projection" />	
+		<link rel="stylesheet" href="/ectn-sub/static/styles/bootstrap-theme.css" type="text/css" media="screen, projection" />
+		<link rel="stylesheet" href="/ectn-sub/static/styles/bootstrap-responsive.css" type="text/css" media="screen, projection" />
+		<link rel="stylesheet" href="/ectn-sub/static/styles/bootstrap.css.map" type="text/css" media="screen, projection" />
+		<link rel="stylesheet" href="/ectn-sub/static/styles/jquery-ui.css" type="text/css" media="screen, projection" />
+		<link rel="stylesheet" href="/ectn-sub/static/styles/jquery-ui-timepicker-addon.css" type="text/css" media="screen, projection" />
+		<link rel="stylesheet" href="/ectn-sub/static/styles/google_fonts.css" type="text/css" media="screen, projection" />
+		<link rel="stylesheet" href="/ectn-sub/static/styles/jquery.pnotify.default.css" type="text/css" media="screen, projection" />
+		<link rel="stylesheet" href="/ectn-sub/static/styles/jquery.pnotify.default.icons.css" type="text/css" media="screen, projection" />
+		<link rel="stylesheet" href="/ectn-sub/static/styles/authorities.css" type="text/css" media="screen, projection" />
+		<link rel="stylesheet" href="/ectn-sub/static/styles/nsw_datatables.css" type="text/css" media="screen, projection" />
+		<link rel="stylesheet" href="/ectn-sub/static/styles/nsw_suggest.css" type="text/css" media="screen, projection" />
+		<link rel="stylesheet" href="/ectn-sub/static/styles/tooltipster.css" type="text/css" media="screen, projection" />
+		<link rel="stylesheet" href="/ectn-sub/static/styles/bootstrap.css" type="text/css" media="screen, projection" />
+		<link rel="stylesheet" href="/ectn-sub/static/styles/font-awesome.css" type="text/css" media="screen, projection" />
+		<link rel="stylesheet" href="/ectn-sub/static/styles/flaticon.css" type="text/css" media="screen, projection" />
+		<link rel="stylesheet" href="/ectn-sub/static/styles/dialog.css" type="text/css" media="screen, projection" />
+		<link rel="stylesheet" href="/ectn-sub/static/styles/style.css" type="text/css" media="screen, projection" />
+		
+
+		<script src="/ectn-sub/static/scripts/jquery-2.2.3.js"></script>
+		<script src="/ectn-sub/static/scripts/jquery.tooltipster.min.js"></script>
+		<script src="/ectn-sub/static/scripts/jquery-migrate-1.4.1.js"></script>
+		<script src="/ectn-sub/static/scripts/DataTables/DataTables-1.10.12/js/jquery.dataTables.js"></script>	
+		<script src="/ectn-sub/static/scripts/DataTables/Responsive-2.1.0/js/dataTables.responsive.js"></script>
+		<script src="/ectn-sub/static/scripts/jquery.dataTables.plugins.js"></script>
+		<script src="/ectn-sub/static/scripts/jquery.dataTables.fnPagingInfo.js"></script>
+		<script src="/ectn-sub/static/scripts/jquery.dataTables.GetHiddenNodes.js"></script>
+		<script src="/ectn-sub/static/scripts/ColReorderWithResize.js"></script>
+		<script src="/ectn-sub/static/scripts/jquery-ui.js"></script>
+		<script src="/ectn-sub/static/scripts/jquery-ui-timepicker-addon.js"></script>
+		<script src="/ectn-sub/static/scripts/jquery.pnotify.js"></script>
+		<script src="/ectn-sub/static/scripts/jquery.dd.js"></script>
+		<script src="/ectn-sub/static/scripts/scripts.js"></script>
+		<script src="/ectn-sub/static/scripts/bootstrap.js"></script>
+		<script src="/ectn-sub/static/scripts/dialog.build.js"></script>
+		<script src="/ectn-sub/static/scripts/moment.min.js"></script>
+		<script src="/ectn-sub/static/scripts/datetime-moment.js"></script>
+		<script src="/ectn-sub/static/scripts/languages.js"></script><script type="text/javascript" src="/ectn-sub/ectn/javax.faces.resource/jsf.js?ln=javax.faces"></script></head><body>
+		<div class="container-fluid">
+			<div class="loading" aria-hidden="true"></div>
+			<div class="row headerArea">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					<h4 class="text-nowrap">ECTN</h4>
+				</div>
+
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					<div class="userLinks">
+							<div class="btn-group">
+								<button type="button" class="btn btn-default dropdown-toggle userbtns" data-toggle="dropdown">
+									<span aria-hidden="true" class="glyphicon glyphicon-th"></span>
+								</button>
+								<ul class="dropdown-menu dropdown-menu-right"><li><a href="/ectn-sub/">ECTN Submission</a></li><li><a href="/ectn-mng/">ECTN Management</a></li>
+								</ul>
+							</div>
+						
+
+						
+						<div class="btn-group">
+							<button type="button" class="btn btn-default dropdown-toggle userbtns" data-toggle="dropdown">
+								<span aria-hidden="true" class="glyphicon glyphicon-user"></span>
+								<span>mdp</span>
+							</button>
+							<ul class="dropdown-menu dropdown-menu-right">
+<form id="langForm" name="langForm" method="post" action="/ectn-sub/ectn/main-flow;jsessionid=6FCC9C95D1ACCA0A4E71BF0C9DF9C639?execution=e1s2" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="langForm" value="langForm" />
+<input id="selectedLanguageHidden" type="hidden" name="selectedLanguageHidden" value="en" />
+								<li class="dropdown-submenu">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Switch language</a>
+									<ul class="language_links dropdown-menu">
+											<li><a tabindex="-1" lang="en" href="/ectn-sub/ectn/main-flow;jsessionid=6FCC9C95D1ACCA0A4E71BF0C9DF9C639?execution=e1s2&amp;selectedLanguage=en" style="font-weight: bold;">English</a></li>
+											<li><a tabindex="-1" lang="en" href="/ectn-sub/ectn/main-flow;jsessionid=6FCC9C95D1ACCA0A4E71BF0C9DF9C639?execution=e1s2&amp;selectedLanguage=fr" style="font-weight: normal;">French</a></li>
+									</ul>
+								</li><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="e1s2" />
+</form>
+								<li><a href="/ectn-login/admin/password.jsp">Change password</a></li>
+								<li><a href="/ectn-login/logout.jsp">Logout</a></li>
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+<form id="form" name="form" method="post" action="/ectn-sub/ectn/main-flow;jsessionid=6FCC9C95D1ACCA0A4E71BF0C9DF9C639?execution=e1s2" enctype="multipart/form-data">
+<input type="hidden" name="form" value="form" />
+
+				<div class="row titleWrapper">
+					<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+						<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+							<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+						</button>
+						<div class="pageTitle">
+							<h3>Request - </h3>
+						</div>
+					</div>
+
+                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                        <span class="infoLabel">Status:</span>
+                        <span class="infoValue">ECTN Edited
+                        </span>
+                    </div>
+
+					<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+						<span class="infoLabel">Port of discharge:</span>
+						<span class="infoValue">Cotonou
+						</span>
+					</div>
+					
+					<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+						<span class="infoLabel">Vessel name:</span>
+						<span class="infoValue"></span>
+					</div><div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-right">
+
+						<div class="btn-group"><input type="submit" name="j_idt42" value="Request Validation" class="btn btn-default NSWbtn3 submit" onclick="$('#confirmSubmissionModal').modal('show');return false;" />
+						</div>
+
+						<div class="btn-group"><input type="submit" name="j_idt44" value="Save" class="btn btn-default NSWbtn3" />
+						</div>
+
+						<div class="btn-group dropdown">
+							<button type="button" class="btn btn-default NSWbtn3 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span class="glyphicon glyphicon-option-vertical"></span>
+							</button>
+							<ul class="dropdown-menu dropdown-menu-right">
+									<li><a id="viewDecisions" href="#" onclick="mojarra.ab(this,event,'action',0,0,{'onevent':callbackOnPopulate});return false">View decisions</a>
+									</li>
+									<li><a id="viewNotifHistory" href="#" onclick="jsf.util.chain(this,event,'$(\'#viewHistoryModal\').modal(\'show\');return false','mojarra.jsfcljs(document.getElementById(\'form\'),{\'viewNotifHistory\':\'viewNotifHistory\'},\'\')');return false">View notification history</a>
+									</li>
+								<li><a href="#" onclick="mojarra.jsfcljs(document.getElementById('form'),{'j_idt53':'j_idt53'},'');return false">Back</a></li>
+							</ul>
+
+							<script>
+								function callbackOnPopulate(data) {
+									if (data.status == "success") {
+										$('#viewDecisionsModal').modal('show');
+										return false;
+									}
+								}
+							</script>
+						</div></div>
+					
+				</div>
+			
+		 	
+			<div class="row">
+
+				
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+						<ul id="navbar" class="sidebarMenu navbar-collapse collapse" aria-expanded="false"><span id="cargoLink">
+                                    <li class="selected">ECTN</li></span>
+							
+						</ul>	
+			 		
+			 	</div>	
+				
+	 	
+	 			
+				<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 mainContent">
+							
+					<section id="messages">
+					</section>
+		<script>
+			$(document).ready(function() {
+				$('.helptooltip').tooltipster({
+					position : 'top'
+				});
+			});
+		</script>
+			
+		<div id="notificationFields">
+
+
+
+            
+
+            <fieldset class="groupData"><div class="row"><div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+	<label for="blNumber" class="helplabel">BL Number
+		<span class="error">*</span>
+			<span class="fa fa-info-circle helptooltip" title="BL Number"></span>
+	</label><input id="blNumber" type="text" name="blNumber" value="" class="simpleTxtField" maxlength="50" /></div><div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+	<label for="portOfLoading" class="helplabel">Port of loading
+		<span class="error">*</span>
+			<span class="fa fa-info-circle helptooltip" title="Identity (UN/LOCODE) of the port where the cargo was loaded on board the ship"></span>
+	</label><div class="suggestbox">
+
+<script>
+
+$(document).ready(function() {
+	$('#portOfLoading_span>input').tooltip({
+		html: true
+		});
+
+	//attach autocomplete
+    $('#portOfLoading_span>input').autocomplete({
+        delay: 1,
+        //define callback to format results
+        source: function (request, response) {
+            $.getJSON('/ectn-sub/rest/rest/suggestLocations?prefix=' + $('#portOfLoading_span>input').val() + '&' + 'userCountryCode=' + '', request, function(result) {
+                response($.map(result, function(item) {
+                    return {
+                        label: item.locationName + '(' + item.locode + ')',
+                        value: item.locationName + '(' + item.locode + ')'
+                    }
+                }));
+            });
+        },
+ 
+        //define select handler
+        select : function(event, ui) {
+            if (ui.item) {
+                event.preventDefault();
+                $('#portOfLoading_span>input').val(ui.item.value);
+                $('#portOfLoading_span>input').data('tooltip',false).tooltip({ title: ui.item.label});
+                return false;
+            }
+        }
+    });
+});
+
+
+</script>
+	<div class="row"><div class="col-md-12">
+			<div class="input-group" id="portOfLoading_span"><input id="portOfLoading_outer" type="text" name="portOfLoading_outer" autocomplete="off" class="form-control simpleTxtField" />
+                <span class="input-group-btn">
+                    <button class="btn btn-default NSWbtn1" type="button" id="portOfLoading_toggler" data-toggle="modal">
+                   		<span id="portOfLoading_s-img" class="fa fa-search" title="Click to open location search dialog"></span>
+                    </button>
+				</span>
+			</div></div>
+	</div>
+
+
+ 
+ <div id="portOfLoading_select_port_modal-dialog" class="modal fade bs-example-modal-lg" aria-hidden="true" role="dialog">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+	        <div class="modal-header">
+	            <button type="button" class="close" aria-hidden="true" onclick="portOfLoading_close()">
+	            	<span aria-hidden="true">×</span>
+	            </button>
+		             <h4 class="modal-title" id="myModalLabel">Select a location for Port of loading</h4>
+	        </div>
+	        <div class="modal-body suggestLocationModal"><div id="portOfLoading_dialog" class="suggestbox">
+						<input type="text" id="portOfLoading_inner" class="simpleTxtField" maxlength="5" autocomplete="off" /></div>
+	  		</div>
+	        <div class="modal-footer">
+           		<button type="button" id="portOfLoading_btnYes" class="btn btn-default" aria-hidden="true" onclick="portOfLoading_applySelectedValue()">Apply</button>
+           		<button type="button" onclick="portOfLoading_close()" aria-hidden="true" class="btn btn-default">Cancel</button>
+        	</div>
+       </div>
+     </div>
+ </div>
+        
+
+<script>
+
+function portOfLoading_applySelectedValue() {
+	$('#portOfLoading_outer').val($('#portOfLoading_inner').val());
+	$('#portOfLoading_select_port_modal-dialog').modal('hide');
+}
+
+function portOfLoading_close(){
+	$('#portOfLoading_select_port_modal-dialog').modal('hide');
+}
+
+$(document).ready(function() {
+	$("#select_port_modal-dialog").modal({
+	    show: false,
+	    backdrop: 'static'
+	});
+	$('#portOfLoading_toggler').click(function(){
+	    $('#portOfLoading_select_port_modal-dialog').modal('show');
+	    
+	});
+	
+	$('#portOfLoading_select_port_modal-dialog .modal-content').on('hidden.bs.modal', function(){
+	    $(this).remove();
+	});
+	
+	$('#portOfLoading_select_port_modal-dialog').on('shown.bs.modal', function () {
+	    $('#portOfLoading_inner').val($('#portOfLoading_span>input').val());
+		$('#portOfLoading_inner').focus();
+	
+	    //attach autocomplete
+	    //autocomplete( "option", "appendTo", ".eventInsForm" )
+	    $('#portOfLoading_inner').autocomplete({
+	    	appendTo: "#portOfLoading_select_port_modal-dialog",
+	        delay: 1,
+	        //define callback to format results
+	        source: function (request, response) {
+	            $.getJSON('/ectn-sub/rest/rest/suggestLocations?prefix=' + $('#portOfLoading_inner').val() + '&' + 'userCountryCode=' + '', request, function(result) {
+	                response($.map(result, function(item) {
+	                    return {
+	                        label: item.locationName + '(' + item.locode + ')',
+	                        value: item.locationName + '(' + item.locode + ')'
+	                    }
+	                }));
+	            });
+	        },
+	 
+	        //define select handler
+	        select : function(event, ui) {
+	            if (ui.item) {
+	                event.preventDefault();
+	                $('#portOfLoading_inner').val(ui.item.value);
+	                $('#portOfLoading_inner').blur();
+	                //$('#portOfLoading_locName').text(ui.item.label);
+	                $('#portOfLoading_span>input').data('tooltip',false)          // Delete the tooltip
+	                .tooltip({ title: ui.item.label});
+	
+	                return false;
+	            }
+	        }
+	    }); 
+	})
+});
+</script></div></div><div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+	<label for="loadingCountry" class="helplabel">Country of loading
+		<span class="error">*</span>
+			<span class="fa fa-info-circle helptooltip" title="The country of the port of loading"></span>
+	</label><select id="loadingCountry" name="loadingCountry" size="1">	<option value="" selected="selected"></option>
+	<option value="AF">Afghanistan (AF)</option>
+	<option value="AX"> (AX)</option>
+	<option value="AL">Albania (AL)</option>
+	<option value="DZ">Algeria (DZ)</option>
+	<option value="AS">American Samoa (AS)</option>
+	<option value="AD">Andorra (AD)</option>
+	<option value="AO">Angola (AO)</option>
+	<option value="AI">Anguilla (AI)</option>
+	<option value="AQ">Antarctica (AQ)</option>
+	<option value="AG">Antigua and Barbuda (AG)</option>
+	<option value="AR">Argentina (AR)</option>
+	<option value="AM">Armenia (AM)</option>
+	<option value="AW">Aruba (AW)</option>
+	<option value="AU">Australia (AU)</option>
+	<option value="AT">Austria (AT)</option>
+	<option value="AZ">Azerbaijan  (AZ)</option>
+	<option value="BS">Bahamas (BS)</option>
+	<option value="BH">Bahrain (BH)</option>
+	<option value="BD">Bangladesh (BD)</option>
+	<option value="BB">Barbados (BB)</option>
+	<option value="BY">Belarus (BY)</option>
+	<option value="BE">Belgium (BE)</option>
+	<option value="BZ">Belize (BZ)</option>
+	<option value="BJ">Benin (BJ)</option>
+	<option value="BM">Bermuda (BM)</option>
+	<option value="BT">Bhutan (BT)</option>
+	<option value="BO">Bolivia (BO)</option>
+	<option value="BQ">BONAIRE SAINT EUSTATIUS AND SABA (BQ)</option>
+	<option value="BA">Bosnia and Herzegovina (BA)</option>
+	<option value="BW">Botswana (BW)</option>
+	<option value="BV"> (BV)</option>
+	<option value="BR">Brazil (BR)</option>
+	<option value="IO">British Indian Ocean Territory (IO)</option>
+	<option value="BN">Brunei Darussalam (BN)</option>
+	<option value="BG">Bulgaria (BG)</option>
+	<option value="BF">Burkina Faso (BF)</option>
+	<option value="BI">Burundi (BI)</option>
+	<option value="KH">Cambodia (KH)</option>
+	<option value="CM">Cameroon (CM)</option>
+	<option value="CA">Canada (CA)</option>
+	<option value="CV">Cape Verde (CV)</option>
+	<option value="KY">Cayman Islands (KY)</option>
+	<option value="CF">Central African Republic (CF)</option>
+	<option value="TD">Chad (TD)</option>
+	<option value="CL">Chile (CL)</option>
+	<option value="CN">China (CN)</option>
+	<option value="CX">Christmas Island (CX)</option>
+	<option value="CC">Cocos (Keeling) Islands (CC)</option>
+	<option value="CO">Colombia (CO)</option>
+	<option value="KM">Comoros (KM)</option>
+	<option value="CG">Congo (CG)</option>
+	<option value="CD">Congo, The Democratic Republic of the (CD)</option>
+	<option value="CK">Cook Islands (CK)</option>
+	<option value="CR">Costa Rica (CR)</option>
+	<option value="HR">Croatia (HR)</option>
+	<option value="CI">Ctte d'Ivoire (CI)</option>
+	<option value="CU">Cuba (CU)</option>
+	<option value="CW">Curacao (CW)</option>
+	<option value="CY">Cyprus (CY)</option>
+	<option value="CZ">Czech Republic (CZ)</option>
+	<option value="DK">Denmark (DK)</option>
+	<option value="DJ">Djibouti (DJ)</option>
+	<option value="DM">Dominica (DM)</option>
+	<option value="DO">Dominican Republic (DO)</option>
+	<option value="EC">Ecuador (EC)</option>
+	<option value="EG">Egypt (EG)</option>
+	<option value="SV">El Salvador (SV)</option>
+	<option value="GQ">Equatorial Guinea (GQ)</option>
+	<option value="ER">Eritrea (ER)</option>
+	<option value="EE">Estonia (EE)</option>
+	<option value="ET">Ethiopia (ET)</option>
+	<option value="EU">European Union (EU)</option>
+	<option value="FK">Falkland Islands (Malvinas) (FK)</option>
+	<option value="FO">Faroe Islands (FO)</option>
+	<option value="FJ">Fiji (FJ)</option>
+	<option value="FI">Finland (FI)</option>
+	<option value="FR">France (FR)</option>
+	<option value="GF">French Guiana (GF)</option>
+	<option value="PF">French Polynesia  (PF)</option>
+	<option value="TF">French Southern Territories (TF)</option>
+	<option value="GA">Gabon (GA)</option>
+	<option value="GM">Gambia (GM)</option>
+	<option value="GE">Georgia (GE)</option>
+	<option value="DE">Germany (DE)</option>
+	<option value="GH">Ghana (GH)</option>
+	<option value="GI">Gibraltar (GI)</option>
+	<option value="XX"> (XX)</option>
+	<option value="GR">Greece (GR)</option>
+	<option value="GL">Greenland (GL)</option>
+	<option value="GD">Grenada (GD)</option>
+	<option value="GP">Guadeloupe (GP)</option>
+	<option value="GU">Guam (GU)</option>
+	<option value="GT">Guatemala (GT)</option>
+	<option value="GG">Guernsey (GG)</option>
+	<option value="GN">Guinea (GN)</option>
+	<option value="GW">Guinea-Bissau (GW)</option>
+	<option value="GY">Guyana (GY)</option>
+	<option value="HT">Haiti (HT)</option>
+	<option value="HM">Heard Island and McDonald Islands (HM)</option>
+	<option value="VA">Holy See (Vatican City State) (VA)</option>
+	<option value="HN">Honduras (HN)</option>
+	<option value="HK">Hong Kong (HK)</option>
+	<option value="HU">Hungary (HU)</option>
+	<option value="IS">Iceland (IS)</option>
+	<option value="IN">India (IN)</option>
+	<option value="ID">Indonesia (ID)</option>
+	<option value="XZ">Installations in International Waters (XZ)</option>
+	<option value="IR">Iran, Islamic Republic of (IR)</option>
+	<option value="IQ">Iraq (IQ)</option>
+	<option value="IE">Ireland (IE)</option>
+	<option value="IM">Isle of Man (IM)</option>
+	<option value="IL">Israel (IL)</option>
+	<option value="IT">Italy (IT)</option>
+	<option value="JM">Jamaica (JM)</option>
+	<option value="JP">Japan (JP)</option>
+	<option value="JE">Jersey (JE)</option>
+	<option value="JO">Jordan (JO)</option>
+	<option value="KZ">Kazakhstan (KZ)</option>
+	<option value="KE">Kenya (KE)</option>
+	<option value="KI">Kiribati (KI)</option>
+	<option value="KP">Korea, Democratic People's Republic of (KP)</option>
+	<option value="KR">Korea, Republic of (KR)</option>
+	<option value="KW">Kuwait (KW)</option>
+	<option value="KG">Kyrgyzstan (KG)</option>
+	<option value="LA">Lao People's Democratic Republic (LA)</option>
+	<option value="LV">Latvia (LV)</option>
+	<option value="LB">Lebanon (LB)</option>
+	<option value="LS">Lesotho (LS)</option>
+	<option value="LR">Liberia (LR)</option>
+	<option value="LY">Libyan Arab Jamahiriya (LY)</option>
+	<option value="LI">Liechtenstein (LI)</option>
+	<option value="LT">Lithuania (LT)</option>
+	<option value="LU">Luxembourg (LU)</option>
+	<option value="MO">Macao (MO)</option>
+	<option value="MK">Macedonia, The former Yugoslav Republic of (MK)</option>
+	<option value="MG">Madagascar (MG)</option>
+	<option value="MW">Malawi (MW)</option>
+	<option value="MY">Malaysia (MY)</option>
+	<option value="MV">Maldives (MV)</option>
+	<option value="ML">Mali (ML)</option>
+	<option value="MT">Malta (MT)</option>
+	<option value="MH">Marshall Islands (MH)</option>
+	<option value="MQ">Martinique (MQ)</option>
+	<option value="MR">Mauritania (MR)</option>
+	<option value="MU">Mauritius (MU)</option>
+	<option value="YT">Mayotte (YT)</option>
+	<option value="MX">Mexico (MX)</option>
+	<option value="FM">Micronesia, Federated States of (FM)</option>
+	<option value="MD">Moldova, Republic of (MD)</option>
+	<option value="MC">Monaco (MC)</option>
+	<option value="MN">Mongolia (MN)</option>
+	<option value="ME">Montenegro (ME)</option>
+	<option value="MS">Montserrat (MS)</option>
+	<option value="MA">Morocco (MA)</option>
+	<option value="MZ">Mozambique (MZ)</option>
+	<option value="MM">Myanmar (MM)</option>
+	<option value="NA">Namibia (NA)</option>
+	<option value="NR">Nauru (NR)</option>
+	<option value="NP">Nepal (NP)</option>
+	<option value="NL">Netherlands (NL)</option>
+	<option value="AN">Netherlands Antilles (AN)</option>
+	<option value="NC">New Caledonia (NC)</option>
+	<option value="NZ">New Zealand (NZ)</option>
+	<option value="NI">Nicaragua (NI)</option>
+	<option value="NE">Niger (NE)</option>
+	<option value="NG">Nigeria (NG)</option>
+	<option value="NU">Niue (NU)</option>
+	<option value="NF">Norfolk Island (NF)</option>
+	<option value="MP">Northern Mariana Islands (MP)</option>
+	<option value="NO">Norway (NO)</option>
+	<option value="OM">Oman (OM)</option>
+	<option value="PK">Pakistan (PK)</option>
+	<option value="PW">Palau (PW)</option>
+	<option value="PS">Palestine (PS)</option>
+	<option value="PA">Panama (PA)</option>
+	<option value="PG">Papua New Guinea (PG)</option>
+	<option value="PY">Paraguay (PY)</option>
+	<option value="PE">Peru (PE)</option>
+	<option value="PH">Philippines (PH)</option>
+	<option value="PN">Pitcairn (PN)</option>
+	<option value="PL">Poland (PL)</option>
+	<option value="PT">Portugal (PT)</option>
+	<option value="PR">Puerto Rico (PR)</option>
+	<option value="QA">Qatar (QA)</option>
+	<option value="RO">Romania (RO)</option>
+	<option value="RE">R?union (RE)</option>
+	<option value="RU">Russian Federation (RU)</option>
+	<option value="RW">Rwanda (RW)</option>
+	<option value="BL"> (BL)</option>
+	<option value="SH">Saint Helena (SH)</option>
+	<option value="KN">Saint Kitts and Nevis (KN)</option>
+	<option value="LC">Saint Lucia (LC)</option>
+	<option value="SX">Saint Martin Dutch part (SX)</option>
+	<option value="MF"> (MF)</option>
+	<option value="PM">Saint Pierre and Miquelon (PM)</option>
+	<option value="VC">Saint Vincent and the Grenadines (VC)</option>
+	<option value="WS">Samoa (WS)</option>
+	<option value="SM">San Marino (SM)</option>
+	<option value="ST">Sao Tome and Principe (ST)</option>
+	<option value="SA">Saudi Arabia (SA)</option>
+	<option value="SN">Senegal (SN)</option>
+	<option value="RS">Serbia (RS)</option>
+	<option value="CS">Serbia and Montenegro (CS)</option>
+	<option value="SC">Seychelles (SC)</option>
+	<option value="SL">Sierra Leone (SL)</option>
+	<option value="SG">Singapore (SG)</option>
+	<option value="SK">Slovakia (SK)</option>
+	<option value="SI">Slovenia (SI)</option>
+	<option value="SB">Solomon Islands (SB)</option>
+	<option value="SO">Somalia (SO)</option>
+	<option value="ZA">South Africa (ZA)</option>
+	<option value="GS">South Georgia and the South Sandwich Islands (GS)</option>
+	<option value="ES">Spain (ES)</option>
+	<option value="LK">Sri Lanka (LK)</option>
+	<option value="SD">Sudan (SD)</option>
+	<option value="SR">Suriname (SR)</option>
+	<option value="SJ">Svalbard and Jan Mayen (SJ)</option>
+	<option value="SZ">Swaziland (SZ)</option>
+	<option value="SE">Sweden (SE)</option>
+	<option value="CH">Switzerland (CH)</option>
+	<option value="SY">Syrian Arab Republic (SY)</option>
+	<option value="TW">Taiwan, Province of China (TW)</option>
+	<option value="TJ">Tajikistan (TJ)</option>
+	<option value="TZ">Tanzania, United Republic of (TZ)</option>
+	<option value="TH">Thailand (TH)</option>
+	<option value="TL">Timor-Leste (TL)</option>
+	<option value="TG">Togo (TG)</option>
+	<option value="TK">Tokelau (TK)</option>
+	<option value="TO">Tonga (TO)</option>
+	<option value="TT">Trinidad and Tobago (TT)</option>
+	<option value="TN">Tunisia (TN)</option>
+	<option value="TR">Turkey (TR)</option>
+	<option value="TM">Turkmenistan (TM)</option>
+	<option value="TC">Turks and Caicos Island (TC)</option>
+	<option value="TV">Tuvalu (TV)</option>
+	<option value="UG">Uganda (UG)</option>
+	<option value="UA">Ukraine (UA)</option>
+	<option value="AE">United Arab Emirates (AE)</option>
+	<option value="GB">United Kingdom (GB)</option>
+	<option value="US">United States (US)</option>
+	<option value="UM">United States Minor Outlying Islands (UM)</option>
+	<option value="UY">Uruguay (UY)</option>
+	<option value="UZ">Uzbekistan (UZ)</option>
+	<option value="VU">Vanuatu (VU)</option>
+	<option value="VE">Venezuela (VE)</option>
+	<option value="VN">Viet Nam (VN)</option>
+	<option value="VG">Virgin Islands, British (VG)</option>
+	<option value="VI">Virgin Islands, U.S. (VI)</option>
+	<option value="WF">Wallis and Futuna (WF)</option>
+	<option value="EH">Western Sahara  (EH)</option>
+	<option value="YE">Yemen (YE)</option>
+	<option value="ZM">Zambia (ZM)</option>
+	<option value="ZW">Zimbabwe (ZW)</option>
+	<option value="ZZ">ZZ exceptional (ZZ)</option>
+</select></div><div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+	<label for="incotermDescriptionEN" class="helplabel">Incoterm description
+		<span class="error">*</span>
+			<span class="fa fa-info-circle helptooltip" title="The incoterm applied on the shipment"></span>
+	</label><select id="incotermDescriptionEN" name="incotermDescriptionEN" size="1">	<option value="" selected="selected"></option>
+	<option value="CFR">CFR - Cost And Freight</option>
+	<option value="FOB">FOB - Free On Board</option>
+	<option value="CIF">CIF - Cost, Insurance, Freight</option>
+	<option value="EXW">EXW - Ex Works</option>
+	<option value="FCA">FCA - Free Carrier</option>
+	<option value="FAS">FAS - Free Alongside Ship</option>
+	<option value="CPT">CPT - Carriage paid to</option>
+	<option value="CIP">CIP - Carriage and insurance paid to</option>
+	<option value="DAP">DAP - Delivered at Place</option>
+	<option value="DAT">DAT - Delivered at Terminal</option>
+	<option value="DDP">DDP - Delivered duty paid</option>
+</select></div><div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+	<label for="freightPaymentEN" class="helplabel">Freight Payment
+		<span class="error">*</span>
+			<span class="fa fa-info-circle helptooltip" title="The type of freight payment used"></span>
+	</label><select id="freightPaymentEN" name="freightPaymentEN" size="1">	<option value="" selected="selected"></option>
+	<option value="As per charter party">As per charter party</option>
+	<option value="Prepaid">Prepaid</option>
+	<option value="Freight collect">Freight collect</option>
+	<option value="Free of freight">Free of freight</option>
+</select></div><div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+	<label for="finalDestination" class="helplabel">Final destination
+		<span class="error">*</span>
+			<span class="fa fa-info-circle helptooltip" title="The final destination of the goods"></span>
+	</label><input id="finalDestination" type="text" name="finalDestination" value="" class="simpleTxtField" maxlength="256" /></div><div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+	<label for="originCountry" class="helplabel">Origin
+		<span class="error">*</span>
+			<span class="fa fa-info-circle helptooltip" title="The origin of the goods"></span>
+	</label><select id="originCountry" name="originCountry" size="1">	<option value="" selected="selected"></option>
+	<option value="AF">Afghanistan (AF)</option>
+	<option value="AX"> (AX)</option>
+	<option value="AL">Albania (AL)</option>
+	<option value="DZ">Algeria (DZ)</option>
+	<option value="AS">American Samoa (AS)</option>
+	<option value="AD">Andorra (AD)</option>
+	<option value="AO">Angola (AO)</option>
+	<option value="AI">Anguilla (AI)</option>
+	<option value="AQ">Antarctica (AQ)</option>
+	<option value="AG">Antigua and Barbuda (AG)</option>
+	<option value="AR">Argentina (AR)</option>
+	<option value="AM">Armenia (AM)</option>
+	<option value="AW">Aruba (AW)</option>
+	<option value="AU">Australia (AU)</option>
+	<option value="AT">Austria (AT)</option>
+	<option value="AZ">Azerbaijan  (AZ)</option>
+	<option value="BS">Bahamas (BS)</option>
+	<option value="BH">Bahrain (BH)</option>
+	<option value="BD">Bangladesh (BD)</option>
+	<option value="BB">Barbados (BB)</option>
+	<option value="BY">Belarus (BY)</option>
+	<option value="BE">Belgium (BE)</option>
+	<option value="BZ">Belize (BZ)</option>
+	<option value="BJ">Benin (BJ)</option>
+	<option value="BM">Bermuda (BM)</option>
+	<option value="BT">Bhutan (BT)</option>
+	<option value="BO">Bolivia (BO)</option>
+	<option value="BQ">BONAIRE SAINT EUSTATIUS AND SABA (BQ)</option>
+	<option value="BA">Bosnia and Herzegovina (BA)</option>
+	<option value="BW">Botswana (BW)</option>
+	<option value="BV"> (BV)</option>
+	<option value="BR">Brazil (BR)</option>
+	<option value="IO">British Indian Ocean Territory (IO)</option>
+	<option value="BN">Brunei Darussalam (BN)</option>
+	<option value="BG">Bulgaria (BG)</option>
+	<option value="BF">Burkina Faso (BF)</option>
+	<option value="BI">Burundi (BI)</option>
+	<option value="KH">Cambodia (KH)</option>
+	<option value="CM">Cameroon (CM)</option>
+	<option value="CA">Canada (CA)</option>
+	<option value="CV">Cape Verde (CV)</option>
+	<option value="KY">Cayman Islands (KY)</option>
+	<option value="CF">Central African Republic (CF)</option>
+	<option value="TD">Chad (TD)</option>
+	<option value="CL">Chile (CL)</option>
+	<option value="CN">China (CN)</option>
+	<option value="CX">Christmas Island (CX)</option>
+	<option value="CC">Cocos (Keeling) Islands (CC)</option>
+	<option value="CO">Colombia (CO)</option>
+	<option value="KM">Comoros (KM)</option>
+	<option value="CG">Congo (CG)</option>
+	<option value="CD">Congo, The Democratic Republic of the (CD)</option>
+	<option value="CK">Cook Islands (CK)</option>
+	<option value="CR">Costa Rica (CR)</option>
+	<option value="HR">Croatia (HR)</option>
+	<option value="CI">Ctte d'Ivoire (CI)</option>
+	<option value="CU">Cuba (CU)</option>
+	<option value="CW">Curacao (CW)</option>
+	<option value="CY">Cyprus (CY)</option>
+	<option value="CZ">Czech Republic (CZ)</option>
+	<option value="DK">Denmark (DK)</option>
+	<option value="DJ">Djibouti (DJ)</option>
+	<option value="DM">Dominica (DM)</option>
+	<option value="DO">Dominican Republic (DO)</option>
+	<option value="EC">Ecuador (EC)</option>
+	<option value="EG">Egypt (EG)</option>
+	<option value="SV">El Salvador (SV)</option>
+	<option value="GQ">Equatorial Guinea (GQ)</option>
+	<option value="ER">Eritrea (ER)</option>
+	<option value="EE">Estonia (EE)</option>
+	<option value="ET">Ethiopia (ET)</option>
+	<option value="EU">European Union (EU)</option>
+	<option value="FK">Falkland Islands (Malvinas) (FK)</option>
+	<option value="FO">Faroe Islands (FO)</option>
+	<option value="FJ">Fiji (FJ)</option>
+	<option value="FI">Finland (FI)</option>
+	<option value="FR">France (FR)</option>
+	<option value="GF">French Guiana (GF)</option>
+	<option value="PF">French Polynesia  (PF)</option>
+	<option value="TF">French Southern Territories (TF)</option>
+	<option value="GA">Gabon (GA)</option>
+	<option value="GM">Gambia (GM)</option>
+	<option value="GE">Georgia (GE)</option>
+	<option value="DE">Germany (DE)</option>
+	<option value="GH">Ghana (GH)</option>
+	<option value="GI">Gibraltar (GI)</option>
+	<option value="XX"> (XX)</option>
+	<option value="GR">Greece (GR)</option>
+	<option value="GL">Greenland (GL)</option>
+	<option value="GD">Grenada (GD)</option>
+	<option value="GP">Guadeloupe (GP)</option>
+	<option value="GU">Guam (GU)</option>
+	<option value="GT">Guatemala (GT)</option>
+	<option value="GG">Guernsey (GG)</option>
+	<option value="GN">Guinea (GN)</option>
+	<option value="GW">Guinea-Bissau (GW)</option>
+	<option value="GY">Guyana (GY)</option>
+	<option value="HT">Haiti (HT)</option>
+	<option value="HM">Heard Island and McDonald Islands (HM)</option>
+	<option value="VA">Holy See (Vatican City State) (VA)</option>
+	<option value="HN">Honduras (HN)</option>
+	<option value="HK">Hong Kong (HK)</option>
+	<option value="HU">Hungary (HU)</option>
+	<option value="IS">Iceland (IS)</option>
+	<option value="IN">India (IN)</option>
+	<option value="ID">Indonesia (ID)</option>
+	<option value="XZ">Installations in International Waters (XZ)</option>
+	<option value="IR">Iran, Islamic Republic of (IR)</option>
+	<option value="IQ">Iraq (IQ)</option>
+	<option value="IE">Ireland (IE)</option>
+	<option value="IM">Isle of Man (IM)</option>
+	<option value="IL">Israel (IL)</option>
+	<option value="IT">Italy (IT)</option>
+	<option value="JM">Jamaica (JM)</option>
+	<option value="JP">Japan (JP)</option>
+	<option value="JE">Jersey (JE)</option>
+	<option value="JO">Jordan (JO)</option>
+	<option value="KZ">Kazakhstan (KZ)</option>
+	<option value="KE">Kenya (KE)</option>
+	<option value="KI">Kiribati (KI)</option>
+	<option value="KP">Korea, Democratic People's Republic of (KP)</option>
+	<option value="KR">Korea, Republic of (KR)</option>
+	<option value="KW">Kuwait (KW)</option>
+	<option value="KG">Kyrgyzstan (KG)</option>
+	<option value="LA">Lao People's Democratic Republic (LA)</option>
+	<option value="LV">Latvia (LV)</option>
+	<option value="LB">Lebanon (LB)</option>
+	<option value="LS">Lesotho (LS)</option>
+	<option value="LR">Liberia (LR)</option>
+	<option value="LY">Libyan Arab Jamahiriya (LY)</option>
+	<option value="LI">Liechtenstein (LI)</option>
+	<option value="LT">Lithuania (LT)</option>
+	<option value="LU">Luxembourg (LU)</option>
+	<option value="MO">Macao (MO)</option>
+	<option value="MK">Macedonia, The former Yugoslav Republic of (MK)</option>
+	<option value="MG">Madagascar (MG)</option>
+	<option value="MW">Malawi (MW)</option>
+	<option value="MY">Malaysia (MY)</option>
+	<option value="MV">Maldives (MV)</option>
+	<option value="ML">Mali (ML)</option>
+	<option value="MT">Malta (MT)</option>
+	<option value="MH">Marshall Islands (MH)</option>
+	<option value="MQ">Martinique (MQ)</option>
+	<option value="MR">Mauritania (MR)</option>
+	<option value="MU">Mauritius (MU)</option>
+	<option value="YT">Mayotte (YT)</option>
+	<option value="MX">Mexico (MX)</option>
+	<option value="FM">Micronesia, Federated States of (FM)</option>
+	<option value="MD">Moldova, Republic of (MD)</option>
+	<option value="MC">Monaco (MC)</option>
+	<option value="MN">Mongolia (MN)</option>
+	<option value="ME">Montenegro (ME)</option>
+	<option value="MS">Montserrat (MS)</option>
+	<option value="MA">Morocco (MA)</option>
+	<option value="MZ">Mozambique (MZ)</option>
+	<option value="MM">Myanmar (MM)</option>
+	<option value="NA">Namibia (NA)</option>
+	<option value="NR">Nauru (NR)</option>
+	<option value="NP">Nepal (NP)</option>
+	<option value="NL">Netherlands (NL)</option>
+	<option value="AN">Netherlands Antilles (AN)</option>
+	<option value="NC">New Caledonia (NC)</option>
+	<option value="NZ">New Zealand (NZ)</option>
+	<option value="NI">Nicaragua (NI)</option>
+	<option value="NE">Niger (NE)</option>
+	<option value="NG">Nigeria (NG)</option>
+	<option value="NU">Niue (NU)</option>
+	<option value="NF">Norfolk Island (NF)</option>
+	<option value="MP">Northern Mariana Islands (MP)</option>
+	<option value="NO">Norway (NO)</option>
+	<option value="OM">Oman (OM)</option>
+	<option value="PK">Pakistan (PK)</option>
+	<option value="PW">Palau (PW)</option>
+	<option value="PS">Palestine (PS)</option>
+	<option value="PA">Panama (PA)</option>
+	<option value="PG">Papua New Guinea (PG)</option>
+	<option value="PY">Paraguay (PY)</option>
+	<option value="PE">Peru (PE)</option>
+	<option value="PH">Philippines (PH)</option>
+	<option value="PN">Pitcairn (PN)</option>
+	<option value="PL">Poland (PL)</option>
+	<option value="PT">Portugal (PT)</option>
+	<option value="PR">Puerto Rico (PR)</option>
+	<option value="QA">Qatar (QA)</option>
+	<option value="RO">Romania (RO)</option>
+	<option value="RE">R?union (RE)</option>
+	<option value="RU">Russian Federation (RU)</option>
+	<option value="RW">Rwanda (RW)</option>
+	<option value="BL"> (BL)</option>
+	<option value="SH">Saint Helena (SH)</option>
+	<option value="KN">Saint Kitts and Nevis (KN)</option>
+	<option value="LC">Saint Lucia (LC)</option>
+	<option value="SX">Saint Martin Dutch part (SX)</option>
+	<option value="MF"> (MF)</option>
+	<option value="PM">Saint Pierre and Miquelon (PM)</option>
+	<option value="VC">Saint Vincent and the Grenadines (VC)</option>
+	<option value="WS">Samoa (WS)</option>
+	<option value="SM">San Marino (SM)</option>
+	<option value="ST">Sao Tome and Principe (ST)</option>
+	<option value="SA">Saudi Arabia (SA)</option>
+	<option value="SN">Senegal (SN)</option>
+	<option value="RS">Serbia (RS)</option>
+	<option value="CS">Serbia and Montenegro (CS)</option>
+	<option value="SC">Seychelles (SC)</option>
+	<option value="SL">Sierra Leone (SL)</option>
+	<option value="SG">Singapore (SG)</option>
+	<option value="SK">Slovakia (SK)</option>
+	<option value="SI">Slovenia (SI)</option>
+	<option value="SB">Solomon Islands (SB)</option>
+	<option value="SO">Somalia (SO)</option>
+	<option value="ZA">South Africa (ZA)</option>
+	<option value="GS">South Georgia and the South Sandwich Islands (GS)</option>
+	<option value="ES">Spain (ES)</option>
+	<option value="LK">Sri Lanka (LK)</option>
+	<option value="SD">Sudan (SD)</option>
+	<option value="SR">Suriname (SR)</option>
+	<option value="SJ">Svalbard and Jan Mayen (SJ)</option>
+	<option value="SZ">Swaziland (SZ)</option>
+	<option value="SE">Sweden (SE)</option>
+	<option value="CH">Switzerland (CH)</option>
+	<option value="SY">Syrian Arab Republic (SY)</option>
+	<option value="TW">Taiwan, Province of China (TW)</option>
+	<option value="TJ">Tajikistan (TJ)</option>
+	<option value="TZ">Tanzania, United Republic of (TZ)</option>
+	<option value="TH">Thailand (TH)</option>
+	<option value="TL">Timor-Leste (TL)</option>
+	<option value="TG">Togo (TG)</option>
+	<option value="TK">Tokelau (TK)</option>
+	<option value="TO">Tonga (TO)</option>
+	<option value="TT">Trinidad and Tobago (TT)</option>
+	<option value="TN">Tunisia (TN)</option>
+	<option value="TR">Turkey (TR)</option>
+	<option value="TM">Turkmenistan (TM)</option>
+	<option value="TC">Turks and Caicos Island (TC)</option>
+	<option value="TV">Tuvalu (TV)</option>
+	<option value="UG">Uganda (UG)</option>
+	<option value="UA">Ukraine (UA)</option>
+	<option value="AE">United Arab Emirates (AE)</option>
+	<option value="GB">United Kingdom (GB)</option>
+	<option value="US">United States (US)</option>
+	<option value="UM">United States Minor Outlying Islands (UM)</option>
+	<option value="UY">Uruguay (UY)</option>
+	<option value="UZ">Uzbekistan (UZ)</option>
+	<option value="VU">Vanuatu (VU)</option>
+	<option value="VE">Venezuela (VE)</option>
+	<option value="VN">Viet Nam (VN)</option>
+	<option value="VG">Virgin Islands, British (VG)</option>
+	<option value="VI">Virgin Islands, U.S. (VI)</option>
+	<option value="WF">Wallis and Futuna (WF)</option>
+	<option value="EH">Western Sahara  (EH)</option>
+	<option value="YE">Yemen (YE)</option>
+	<option value="ZM">Zambia (ZM)</option>
+	<option value="ZW">Zimbabwe (ZW)</option>
+	<option value="ZZ">ZZ exceptional (ZZ)</option>
+</select></div><div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+	<label for="currency" class="helplabel">Currency
+		<span class="error">*</span>
+			<span class="fa fa-info-circle helptooltip" title="The currency of the value of the goods and freight"></span>
+	</label><select id="currency" name="currency" size="1">	<option value="" selected="selected"></option>
+	<option value="EUR">EUR</option>
+	<option value="USD">USD</option>
+</select></div></div>
+            </fieldset>
+
+            <fieldset class="groupData"><div class="row"><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><div class="row"><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<legend class="groupDataTitle">Search actor<span class="error">*</span>
+				</legend></div></div><a href="/ectn-mng/ectn/actorCreate-flow" target="_blank">Create Actor</a><div id="supplyActorsPanel" class="activityData"><input id="deleteSupplyActorsRowBtn" type="submit" name="deleteSupplyActorsRowBtn" value="" style="display:none" onclick="mojarra.ab(this,event,'action','@form','supplyActorsPanel');return false" /><input id="deleteAllSupplyActorsBtn" type="submit" name="deleteAllSupplyActorsBtn" value="" style="display:none" onclick="mojarra.ab(this,event,'action','@form','supplyActorsPanel');return false" /><input id="addSupplyActorItemBtn" type="submit" name="addSupplyActorItemBtn" value="" style="display:none" /><input id="selectedSupplyActorItemId" type="hidden" name="selectedSupplyActorItemId" value="0" /><div class="row"><div class="col-lg-3 col-md-4 col-sm-4 col-xs-9">
+	<label for="searchRole" class="helplabel">Role
+		
+	</label><select id="searchRole" name="searchRole" size="1">	<option value="" selected="selected"></option>
+	<option value="SH">Shipper</option>
+	<option value="CS">Consignee</option>
+	<option value="NO">Notify</option>
+	<option value="CR">Carrier</option>
+</select></div><div class="col-lg-3 col-md-4 col-sm-4 col-xs-9">
+	<label class="helplabel">Name
+		
+	</label><div class="suggestbox">
+
+        <script>
+
+            $(document).ready(function() {
+                $('#supplyActorEori_span>input').tooltip({
+                    html: true
+                });
+
+                //attach autocomplete
+                $('#supplyActorEori_span>input').autocomplete({
+                    delay: 1,
+                    //define callback to format results
+                    source: function (request, response) {
+                        $.getJSON('/ectn-sub/rest/rest/suggestActor?role='+ $('#searchRole').val()+ '&roleFR=' + $('#searchRoleFR').val() +'&user=mdp&eori=' + $('#supplyActorEori_span>input').val() + '&name=' + $('#supplyActorEori_span>input').val(), request, function(result) {
+                            response($.map(result, function(item) {
+                                return {
+                                    label: item.name,
+                                    value: item
+                                }
+                            }));
+                        });
+                    },
+
+                    //define select handler
+                    select : function(event, ui) {
+                        if (ui.item) {
+                            event.preventDefault();
+                            $('#supplyActorEori_span>input').val(ui.item.value.name);
+                            $('#actor_postCode').val(ui.item.value.postCode);
+                            $('#actor_role').val(ui.item.value.role);
+                            $('#actor_address').val(ui.item.value.address);
+                            $('#actor_city').val(ui.item.value.city);
+                            $('#actor_telephone').val(ui.item.value.telephone);
+                            $('#actor_fax').val(ui.item.value.fax);
+                            $('#actor_email').val(ui.item.value.email);
+                            $('#actor_eori').val(ui.item.value.eori);
+                            $('#actor_country_code').val(ui.item.value.country.code);
+                            $('#supplyActorEori_span>input').data('tooltip',false).tooltip({ title: ui.item.label});
+                            return false;
+                        }
+                    }
+                });
+            });
+
+
+        </script>
+        <div class="row"><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="input-group" id="supplyActorEori_span"><input id="supplyActorEori_outer" type="text" name="supplyActorEori_outer" autocomplete="off" value="" class="form-control simpleTxtField" /><input id="actor_role" type="hidden" name="actor_role" /><input id="actor_postCode" type="hidden" name="actor_postCode" value="" /><input id="actor_address" type="hidden" name="actor_address" value="" /><input id="actor_city" type="hidden" name="actor_city" value="" /><input id="actor_telephone" type="hidden" name="actor_telephone" value="" /><input id="actor_fax" type="hidden" name="actor_fax" value="" /><input id="actor_email" type="hidden" name="actor_email" value="" /><input id="actor_country_code" type="hidden" name="actor_country_code" value="" /><input id="actor_eori" type="hidden" name="actor_eori" value="" />
+                    <span class="input-group-btn">
+                    <button class="btn btn-default NSWbtn1" type="button" id="supplyActorEori_toggler" data-toggle="modal">
+                        <span id="supplyActorEori_s-img" class="fa fa-search" title="Click to open actor search dialog"></span>
+                    </button>
+                </span>
+                </div></div>
+        </div>
+
+
+
+        <div id="supplyActorEori_select_actor_modal-dialog" class="modal fade bs-example-modal-lg" aria-hidden="true" role="dialog">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" aria-hidden="true" onclick="supplyActorEori_close();">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                            <h4 class="modal-title" id="myModalLabel"> Select a Supply Actor</h4>
+                    </div>
+                    <div class="modal-body suggestLocationModal"><div id="supplyActorEori_dialog" class="suggestbox">
+                                <input type="text" id="supplyActorEori_inner" class="simpleTxtField" maxlength="5" autocomplete="off" /></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="supplyActorEori_btnYes" class="btn btn-default" aria-hidden="true" onclick="supplyActorEori_applySelectedValue();">Apply</button>
+                        <button type="button" onclick="supplyActorEori_close()" aria-hidden="true" class="btn btn-default">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+
+
+
+            function supplyActorEori_applySelectedValue() {
+                $('#supplyActorEori_outer').val($('#supplyActorEori_inner').val());
+                $('#supplyActorEori_select_actor_modal-dialog').modal('hide');
+            }
+
+            function supplyActorEori_close(){
+                $('#supplyActorEori_select_actor_modal-dialog').modal('hide');
+            }
+
+            $(document).ready(function() {
+                $("#select_actor_modal-dialog").modal({
+                    show: false,
+                    backdrop: 'static'
+                });
+                $('#supplyActorEori_toggler').click(function(){
+                    $('#supplyActorEori_select_actor_modal-dialog').modal('show');
+
+                });
+
+                $('#supplyActorEori_select_actor_modal-dialog .modal-content').on('hidden.bs.modal', function(){
+                    $(this).remove();
+                });
+
+                $('#supplyActorEori_select_actor_modal-dialog').on('shown.bs.modal', function () {
+                    $('#supplyActorEori_inner').val($('#supplyActorEori_span>input').val());
+                    $('#supplyActorEori_inner').focus();
+
+                    //attach autocomplete
+                    //autocomplete( "option", "appendTo", ".eventInsForm" )
+                    $('#supplyActorEori_inner').autocomplete({
+                        appendTo: "#supplyActorEori_select_actor_modal-dialog",
+                        delay: 1,
+                        //define callback to format results
+                        source: function (request, response) {
+                            $.getJSON('/ectn-sub/rest/rest/suggestActor?eori=' + $('#supplyActorEori_span>input').val() , request, function(result) {
+                                response($.map(result, function(item) {
+                                    return {
+                                        label: item.eori + '(' + item.postCode + ')',
+                                        value: item.eori
+                                    }
+                                }));
+                            });
+                        },
+
+                        //define select handler
+                        select : function(event, ui) {
+                            if (ui.item) {
+                                event.preventDefault();
+                                $('#supplyActorEori_inner').val(ui.item.value);
+                                $('#supplyActorEori_inner').blur();
+                                //$('#supplyActorEori_locName').text(ui.item.label);
+                                $('#supplyActorEori_span>input').data('tooltip',false) // Delete the tooltip
+                                    .tooltip({ title: ui.item.label});
+
+                                return false;
+                            }
+                        }
+                    });
+                })
+            });
+        </script></div></div><div class="col-lg-3 col-md-4 col-sm-4 col-xs-9">
+	<label for="searchRole" class="helplabel">Add
+		
+	</label>
+                                    <button type="button" class="btn btn-default btn-xs actionBtn" onclick="addSupplyActorItemFn();">
+                                        <span aria-hidden="true" class="glyphicon glyphicon-plus"></span>
+                                    </button></div></div><div class="row"><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	<label class="helplabel">Selected actors
+		
+	</label>
+                            <table id="supplyActorsTable" class="display largeTable">
+                                <thead>
+                                <tr>
+                                    <th>Role</th>
+                                    <th>Name</th>
+                                    <th>Address</th>
+                                    <th>Postal Code</th>
+                                    <th>City</th>
+                                    <th>Telephone</th>
+                                    <th>Fax</th>
+                                    <th>Email</th>
+                                    <th>Country</th>
+										<th></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                            <script>
+                                function addSupplyActorItemFn(){
+                                    $('#addSupplyActorItemBtn').click();
+                                }
+
+                                $('#supplyActorsTable').dataTable({
+                                    "searching": false,
+                                    "order": [[ 1, "desc" ]],
+                                    "columnDefs": [{ "orderable": false, "targets": 2 }],
+                                    "dom": 'frtlip',
+                                    "responsive": true,
+                                    "autoWidth": false,
+                                    // Code used to show or hide the datatable pagination or datatable pagination info
+                                    // depending on datatable length
+                                    "fnDrawCallback": function(oSettings) {
+                                        if (oSettings._iDisplayLength >= oSettings.fnRecordsDisplay()) {
+                                            $(oSettings.nTableWrapper).find('.dataTables_paginate').hide();
+                                            $(oSettings.nTableWrapper).find('.dataTables_info').hide();
+                                            $(oSettings.nTableWrapper).find('.dataTables_length').hide();
+                                        } else {
+                                            $(oSettings.nTableWrapper).find('.dataTables_paginate').show();
+                                            $(oSettings.nTableWrapper).find('.dataTables_info').show();
+                                            $(oSettings.nTableWrapper).find('.dataTables_length').show();
+                                        }
+                                    }
+                                });
+                            </script></div></div></div></div></div>
+
+            </fieldset>
+
+            
+
+            <fieldset class="groupData"><div class="row"><div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+	<label for="portofcall" class="helplabel">Port of discharge
+		<span class="error">*</span>
+			<span class="fa fa-info-circle helptooltip" title="Port in which the goods will be unloaded from the vessel"></span>
+	</label><div class="suggestbox">
+
+<script>
+
+$(document).ready(function() {
+	$('#portOfCall_span>input').tooltip({
+		html: true
+		});
+
+	//attach autocomplete
+    $('#portOfCall_span>input').autocomplete({
+        delay: 1,
+        //define callback to format results
+        source: function (request, response) {
+            $.getJSON('/ectn-sub/rest/rest/suggestLocations?prefix=' + $('#portOfCall_span>input').val() + '&' + 'userCountryCode=' + 'TR', request, function(result) {
+                response($.map(result, function(item) {
+                    return {
+                        label: item.locationName + '(' + item.locode + ')',
+                        value: item.locationName + '(' + item.locode + ')'
+                    }
+                }));
+            });
+        },
+ 
+        //define select handler
+        select : function(event, ui) {
+            if (ui.item) {
+                event.preventDefault();
+                $('#portOfCall_span>input').val(ui.item.value);
+                $('#portOfCall_span>input').data('tooltip',false).tooltip({ title: ui.item.label});
+                handlePortCallSelection();
+                return false;
+            }
+        }
+    });
+});
+
+
+</script>
+	<div class="row"><div class="col-md-12">
+			<div class="input-group" id="portOfCall_span"><input id="portOfCall_outer" type="text" name="portOfCall_outer" autocomplete="off" value="Cotonou(BJCOO)" class="form-control simpleTxtField" readonly="readonly" onchange="handlePortCallSelection();" />
+                <span class="input-group-btn">
+                    <button class="btn btn-default NSWbtn1" type="button" id="portOfCall_toggler" data-toggle="modal">
+                        <span id="portOfCall_s-img" class="fa fa-search" title="Click to open location search dialog"></span>
+                    </button>
+                </span>
+            </div></div>
+	</div>
+
+
+ 
+ <div id="portOfCall_select_port_modal-dialog" class="modal fade bs-example-modal-lg" aria-hidden="true" role="dialog">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+	        <div class="modal-header">
+	            <button type="button" class="close" aria-hidden="true" onclick="portOfCall_close(); handlePortCallSelection();">
+	            	<span aria-hidden="true">×</span>
+	            </button>
+		             <h4 class="modal-title" id="myModalLabel">Select a location for Port of Call</h4>
+	        </div>
+	        <div class="modal-body suggestLocationModal"><div id="portOfCall_dialog" class="suggestbox">
+						<input type="text" id="portOfCall_inner" class="simpleTxtField" maxlength="5" autocomplete="off" /></div>
+	  		</div>
+	        <div class="modal-footer">
+           		<button type="button" id="portOfCall_btnYes" class="btn btn-default" aria-hidden="true" onclick="portOfCall_applySelectedValue(); handlePortCallSelection();">Apply</button>
+           		<button type="button" onclick="portOfCall_close()" aria-hidden="true" class="btn btn-default">Cancel</button>
+        	</div>
+       </div>
+     </div>
+ </div>
+        
+
+<script>
+
+    function handlePortCallSelection() {
+        $('#selectPortBtn').click();
+
+    }
+
+function portOfCall_applySelectedValue() {
+	$('#portOfCall_outer').val($('#portOfCall_inner').val());
+	$('#portOfCall_select_port_modal-dialog').modal('hide');
+}
+
+function portOfCall_close(){
+	$('#portOfCall_select_port_modal-dialog').modal('hide');
+}
+
+$(document).ready(function() {
+	$("#select_port_modal-dialog").modal({
+	    show: false,
+	    backdrop: 'static'
+	});
+	$('#portOfCall_toggler').click(function(){
+	    $('#portOfCall_select_port_modal-dialog').modal('show');
+	    
+	});
+	
+	$('#portOfCall_select_port_modal-dialog .modal-content').on('hidden.bs.modal', function(){
+	    $(this).remove();
+	});
+	
+	$('#portOfCall_select_port_modal-dialog').on('shown.bs.modal', function () {
+	    $('#portOfCall_inner').val($('#portOfCall_span>input').val());
+		$('#portOfCall_inner').focus();
+	
+	    //attach autocomplete
+	    //autocomplete( "option", "appendTo", ".eventInsForm" )
+	    $('#portOfCall_inner').autocomplete({
+	    	appendTo: "#portOfCall_select_port_modal-dialog",
+	        delay: 1,
+	        //define callback to format results
+	        source: function (request, response) {
+	            $.getJSON('/ectn-sub/rest/rest/suggestLocations?prefix=' + $('#portOfCall_span>input').val() + '&' + 'userCountryCode=' + 'TR', request, function(result) {
+	                response($.map(result, function(item) {
+	                    return {
+	                        label: item.locationName + '(' + item.locode + ')',
+	                        value: item.locationName + '(' + item.locode + ')'
+	                    }
+	                }));
+	            });
+	        },
+	 
+	        //define select handler
+	        select : function(event, ui) {
+	            if (ui.item) {
+	                event.preventDefault();
+	                $('#portOfCall_inner').val(ui.item.value);
+	                $('#portOfCall_inner').blur();
+	                //$('#portOfCall_locName').text(ui.item.label);
+	                $('#portOfCall_span>input').data('tooltip',false)          // Delete the tooltip
+	                .tooltip({ title: ui.item.label});
+	
+	                return false;
+	            }
+	        }
+	    }); 
+	})
+});
+</script></div></div><div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+	<label for="dischargingCountry" class="helplabel">Country of discharge
+		<span class="error">*</span>
+			<span class="fa fa-info-circle helptooltip" title="The country of the port of discharge"></span>
+	</label><select id="dischargingCountry" name="dischargingCountry" size="1" disabled="disabled">	<option value=""></option>
+	<option value="AF">Afghanistan (AF)</option>
+	<option value="AX"> (AX)</option>
+	<option value="AL">Albania (AL)</option>
+	<option value="DZ">Algeria (DZ)</option>
+	<option value="AS">American Samoa (AS)</option>
+	<option value="AD">Andorra (AD)</option>
+	<option value="AO">Angola (AO)</option>
+	<option value="AI">Anguilla (AI)</option>
+	<option value="AQ">Antarctica (AQ)</option>
+	<option value="AG">Antigua and Barbuda (AG)</option>
+	<option value="AR">Argentina (AR)</option>
+	<option value="AM">Armenia (AM)</option>
+	<option value="AW">Aruba (AW)</option>
+	<option value="AU">Australia (AU)</option>
+	<option value="AT">Austria (AT)</option>
+	<option value="AZ">Azerbaijan  (AZ)</option>
+	<option value="BS">Bahamas (BS)</option>
+	<option value="BH">Bahrain (BH)</option>
+	<option value="BD">Bangladesh (BD)</option>
+	<option value="BB">Barbados (BB)</option>
+	<option value="BY">Belarus (BY)</option>
+	<option value="BE">Belgium (BE)</option>
+	<option value="BZ">Belize (BZ)</option>
+	<option value="BJ" selected="selected">Benin (BJ)</option>
+	<option value="BM">Bermuda (BM)</option>
+	<option value="BT">Bhutan (BT)</option>
+	<option value="BO">Bolivia (BO)</option>
+	<option value="BQ">BONAIRE SAINT EUSTATIUS AND SABA (BQ)</option>
+	<option value="BA">Bosnia and Herzegovina (BA)</option>
+	<option value="BW">Botswana (BW)</option>
+	<option value="BV"> (BV)</option>
+	<option value="BR">Brazil (BR)</option>
+	<option value="IO">British Indian Ocean Territory (IO)</option>
+	<option value="BN">Brunei Darussalam (BN)</option>
+	<option value="BG">Bulgaria (BG)</option>
+	<option value="BF">Burkina Faso (BF)</option>
+	<option value="BI">Burundi (BI)</option>
+	<option value="KH">Cambodia (KH)</option>
+	<option value="CM">Cameroon (CM)</option>
+	<option value="CA">Canada (CA)</option>
+	<option value="CV">Cape Verde (CV)</option>
+	<option value="KY">Cayman Islands (KY)</option>
+	<option value="CF">Central African Republic (CF)</option>
+	<option value="TD">Chad (TD)</option>
+	<option value="CL">Chile (CL)</option>
+	<option value="CN">China (CN)</option>
+	<option value="CX">Christmas Island (CX)</option>
+	<option value="CC">Cocos (Keeling) Islands (CC)</option>
+	<option value="CO">Colombia (CO)</option>
+	<option value="KM">Comoros (KM)</option>
+	<option value="CG">Congo (CG)</option>
+	<option value="CD">Congo, The Democratic Republic of the (CD)</option>
+	<option value="CK">Cook Islands (CK)</option>
+	<option value="CR">Costa Rica (CR)</option>
+	<option value="HR">Croatia (HR)</option>
+	<option value="CI">Ctte d'Ivoire (CI)</option>
+	<option value="CU">Cuba (CU)</option>
+	<option value="CW">Curacao (CW)</option>
+	<option value="CY">Cyprus (CY)</option>
+	<option value="CZ">Czech Republic (CZ)</option>
+	<option value="DK">Denmark (DK)</option>
+	<option value="DJ">Djibouti (DJ)</option>
+	<option value="DM">Dominica (DM)</option>
+	<option value="DO">Dominican Republic (DO)</option>
+	<option value="EC">Ecuador (EC)</option>
+	<option value="EG">Egypt (EG)</option>
+	<option value="SV">El Salvador (SV)</option>
+	<option value="GQ">Equatorial Guinea (GQ)</option>
+	<option value="ER">Eritrea (ER)</option>
+	<option value="EE">Estonia (EE)</option>
+	<option value="ET">Ethiopia (ET)</option>
+	<option value="EU">European Union (EU)</option>
+	<option value="FK">Falkland Islands (Malvinas) (FK)</option>
+	<option value="FO">Faroe Islands (FO)</option>
+	<option value="FJ">Fiji (FJ)</option>
+	<option value="FI">Finland (FI)</option>
+	<option value="FR">France (FR)</option>
+	<option value="GF">French Guiana (GF)</option>
+	<option value="PF">French Polynesia  (PF)</option>
+	<option value="TF">French Southern Territories (TF)</option>
+	<option value="GA">Gabon (GA)</option>
+	<option value="GM">Gambia (GM)</option>
+	<option value="GE">Georgia (GE)</option>
+	<option value="DE">Germany (DE)</option>
+	<option value="GH">Ghana (GH)</option>
+	<option value="GI">Gibraltar (GI)</option>
+	<option value="XX"> (XX)</option>
+	<option value="GR">Greece (GR)</option>
+	<option value="GL">Greenland (GL)</option>
+	<option value="GD">Grenada (GD)</option>
+	<option value="GP">Guadeloupe (GP)</option>
+	<option value="GU">Guam (GU)</option>
+	<option value="GT">Guatemala (GT)</option>
+	<option value="GG">Guernsey (GG)</option>
+	<option value="GN">Guinea (GN)</option>
+	<option value="GW">Guinea-Bissau (GW)</option>
+	<option value="GY">Guyana (GY)</option>
+	<option value="HT">Haiti (HT)</option>
+	<option value="HM">Heard Island and McDonald Islands (HM)</option>
+	<option value="VA">Holy See (Vatican City State) (VA)</option>
+	<option value="HN">Honduras (HN)</option>
+	<option value="HK">Hong Kong (HK)</option>
+	<option value="HU">Hungary (HU)</option>
+	<option value="IS">Iceland (IS)</option>
+	<option value="IN">India (IN)</option>
+	<option value="ID">Indonesia (ID)</option>
+	<option value="XZ">Installations in International Waters (XZ)</option>
+	<option value="IR">Iran, Islamic Republic of (IR)</option>
+	<option value="IQ">Iraq (IQ)</option>
+	<option value="IE">Ireland (IE)</option>
+	<option value="IM">Isle of Man (IM)</option>
+	<option value="IL">Israel (IL)</option>
+	<option value="IT">Italy (IT)</option>
+	<option value="JM">Jamaica (JM)</option>
+	<option value="JP">Japan (JP)</option>
+	<option value="JE">Jersey (JE)</option>
+	<option value="JO">Jordan (JO)</option>
+	<option value="KZ">Kazakhstan (KZ)</option>
+	<option value="KE">Kenya (KE)</option>
+	<option value="KI">Kiribati (KI)</option>
+	<option value="KP">Korea, Democratic People's Republic of (KP)</option>
+	<option value="KR">Korea, Republic of (KR)</option>
+	<option value="KW">Kuwait (KW)</option>
+	<option value="KG">Kyrgyzstan (KG)</option>
+	<option value="LA">Lao People's Democratic Republic (LA)</option>
+	<option value="LV">Latvia (LV)</option>
+	<option value="LB">Lebanon (LB)</option>
+	<option value="LS">Lesotho (LS)</option>
+	<option value="LR">Liberia (LR)</option>
+	<option value="LY">Libyan Arab Jamahiriya (LY)</option>
+	<option value="LI">Liechtenstein (LI)</option>
+	<option value="LT">Lithuania (LT)</option>
+	<option value="LU">Luxembourg (LU)</option>
+	<option value="MO">Macao (MO)</option>
+	<option value="MK">Macedonia, The former Yugoslav Republic of (MK)</option>
+	<option value="MG">Madagascar (MG)</option>
+	<option value="MW">Malawi (MW)</option>
+	<option value="MY">Malaysia (MY)</option>
+	<option value="MV">Maldives (MV)</option>
+	<option value="ML">Mali (ML)</option>
+	<option value="MT">Malta (MT)</option>
+	<option value="MH">Marshall Islands (MH)</option>
+	<option value="MQ">Martinique (MQ)</option>
+	<option value="MR">Mauritania (MR)</option>
+	<option value="MU">Mauritius (MU)</option>
+	<option value="YT">Mayotte (YT)</option>
+	<option value="MX">Mexico (MX)</option>
+	<option value="FM">Micronesia, Federated States of (FM)</option>
+	<option value="MD">Moldova, Republic of (MD)</option>
+	<option value="MC">Monaco (MC)</option>
+	<option value="MN">Mongolia (MN)</option>
+	<option value="ME">Montenegro (ME)</option>
+	<option value="MS">Montserrat (MS)</option>
+	<option value="MA">Morocco (MA)</option>
+	<option value="MZ">Mozambique (MZ)</option>
+	<option value="MM">Myanmar (MM)</option>
+	<option value="NA">Namibia (NA)</option>
+	<option value="NR">Nauru (NR)</option>
+	<option value="NP">Nepal (NP)</option>
+	<option value="NL">Netherlands (NL)</option>
+	<option value="AN">Netherlands Antilles (AN)</option>
+	<option value="NC">New Caledonia (NC)</option>
+	<option value="NZ">New Zealand (NZ)</option>
+	<option value="NI">Nicaragua (NI)</option>
+	<option value="NE">Niger (NE)</option>
+	<option value="NG">Nigeria (NG)</option>
+	<option value="NU">Niue (NU)</option>
+	<option value="NF">Norfolk Island (NF)</option>
+	<option value="MP">Northern Mariana Islands (MP)</option>
+	<option value="NO">Norway (NO)</option>
+	<option value="OM">Oman (OM)</option>
+	<option value="PK">Pakistan (PK)</option>
+	<option value="PW">Palau (PW)</option>
+	<option value="PS">Palestine (PS)</option>
+	<option value="PA">Panama (PA)</option>
+	<option value="PG">Papua New Guinea (PG)</option>
+	<option value="PY">Paraguay (PY)</option>
+	<option value="PE">Peru (PE)</option>
+	<option value="PH">Philippines (PH)</option>
+	<option value="PN">Pitcairn (PN)</option>
+	<option value="PL">Poland (PL)</option>
+	<option value="PT">Portugal (PT)</option>
+	<option value="PR">Puerto Rico (PR)</option>
+	<option value="QA">Qatar (QA)</option>
+	<option value="RO">Romania (RO)</option>
+	<option value="RE">R?union (RE)</option>
+	<option value="RU">Russian Federation (RU)</option>
+	<option value="RW">Rwanda (RW)</option>
+	<option value="BL"> (BL)</option>
+	<option value="SH">Saint Helena (SH)</option>
+	<option value="KN">Saint Kitts and Nevis (KN)</option>
+	<option value="LC">Saint Lucia (LC)</option>
+	<option value="SX">Saint Martin Dutch part (SX)</option>
+	<option value="MF"> (MF)</option>
+	<option value="PM">Saint Pierre and Miquelon (PM)</option>
+	<option value="VC">Saint Vincent and the Grenadines (VC)</option>
+	<option value="WS">Samoa (WS)</option>
+	<option value="SM">San Marino (SM)</option>
+	<option value="ST">Sao Tome and Principe (ST)</option>
+	<option value="SA">Saudi Arabia (SA)</option>
+	<option value="SN">Senegal (SN)</option>
+	<option value="RS">Serbia (RS)</option>
+	<option value="CS">Serbia and Montenegro (CS)</option>
+	<option value="SC">Seychelles (SC)</option>
+	<option value="SL">Sierra Leone (SL)</option>
+	<option value="SG">Singapore (SG)</option>
+	<option value="SK">Slovakia (SK)</option>
+	<option value="SI">Slovenia (SI)</option>
+	<option value="SB">Solomon Islands (SB)</option>
+	<option value="SO">Somalia (SO)</option>
+	<option value="ZA">South Africa (ZA)</option>
+	<option value="GS">South Georgia and the South Sandwich Islands (GS)</option>
+	<option value="ES">Spain (ES)</option>
+	<option value="LK">Sri Lanka (LK)</option>
+	<option value="SD">Sudan (SD)</option>
+	<option value="SR">Suriname (SR)</option>
+	<option value="SJ">Svalbard and Jan Mayen (SJ)</option>
+	<option value="SZ">Swaziland (SZ)</option>
+	<option value="SE">Sweden (SE)</option>
+	<option value="CH">Switzerland (CH)</option>
+	<option value="SY">Syrian Arab Republic (SY)</option>
+	<option value="TW">Taiwan, Province of China (TW)</option>
+	<option value="TJ">Tajikistan (TJ)</option>
+	<option value="TZ">Tanzania, United Republic of (TZ)</option>
+	<option value="TH">Thailand (TH)</option>
+	<option value="TL">Timor-Leste (TL)</option>
+	<option value="TG">Togo (TG)</option>
+	<option value="TK">Tokelau (TK)</option>
+	<option value="TO">Tonga (TO)</option>
+	<option value="TT">Trinidad and Tobago (TT)</option>
+	<option value="TN">Tunisia (TN)</option>
+	<option value="TR">Turkey (TR)</option>
+	<option value="TM">Turkmenistan (TM)</option>
+	<option value="TC">Turks and Caicos Island (TC)</option>
+	<option value="TV">Tuvalu (TV)</option>
+	<option value="UG">Uganda (UG)</option>
+	<option value="UA">Ukraine (UA)</option>
+	<option value="AE">United Arab Emirates (AE)</option>
+	<option value="GB">United Kingdom (GB)</option>
+	<option value="US">United States (US)</option>
+	<option value="UM">United States Minor Outlying Islands (UM)</option>
+	<option value="UY">Uruguay (UY)</option>
+	<option value="UZ">Uzbekistan (UZ)</option>
+	<option value="VU">Vanuatu (VU)</option>
+	<option value="VE">Venezuela (VE)</option>
+	<option value="VN">Viet Nam (VN)</option>
+	<option value="VG">Virgin Islands, British (VG)</option>
+	<option value="VI">Virgin Islands, U.S. (VI)</option>
+	<option value="WF">Wallis and Futuna (WF)</option>
+	<option value="EH">Western Sahara  (EH)</option>
+	<option value="YE">Yemen (YE)</option>
+	<option value="ZM">Zambia (ZM)</option>
+	<option value="ZW">Zimbabwe (ZW)</option>
+	<option value="ZZ">ZZ exceptional (ZZ)</option>
+</select></div><div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+	<label for="etdFromPortCall" class="helplabel">ETD from port of loading
+		<span class="error">*</span>
+			<span class="fa fa-info-circle helptooltip" title="Estimated time and date of departure from the port of loading"></span>
+	</label>
+		<span class="datetime"><input id="etdFromPortCall" type="text" name="etdFromPortCall" autocomplete="off" class="simpleTxtField" maxlength="19" title="Select date and time from the date window" />
+	    </span>
+
+	<script>
+		$('#etdFromPortCall').datetimepicker({dateFormat : 'dd/mm/yy',	timeFormat : 'HH:mm',changeYear: true,yearRange: '-100:+10'});
+		$('#etdFromPortCall_a').datetimepicker({dateFormat : 'dd/mm/yy',	timeFormat : 'HH:mm',changeYear: true,yearRange: '-100:+10'});
+	</script></div><div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+	<label for="etaToPortCall" class="helplabel">ETA at port of discharge
+		<span class="error">*</span>
+			<span class="fa fa-info-circle helptooltip" title="Estimated time and date of arrival at the port of discharge"></span>
+	</label>
+		<span class="datetime"><input id="etaToPortCall" type="text" name="etaToPortCall" autocomplete="off" class="simpleTxtField" maxlength="19" title="Select date and time from the date window" />
+	    </span>
+
+	<script>
+		$('#etaToPortCall').datetimepicker({dateFormat : 'dd/mm/yy',	timeFormat : 'HH:mm',changeYear: true,yearRange: '-100:+10'});
+		$('#etaToPortCall_a').datetimepicker({dateFormat : 'dd/mm/yy',	timeFormat : 'HH:mm',changeYear: true,yearRange: '-100:+10'});
+	</script></div><div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+	<label for="atdPortOfCallDate" class="helplabel">ATD from port of loading
+		
+			<span class="fa fa-info-circle helptooltip" title="Actual time that ship departed from port of loading"></span>
+	</label>
+		<span class="datetime"><input id="atdPortOfCallDate" type="text" name="atdPortOfCallDate" autocomplete="off" class="simpleTxtField" maxlength="19" title="Select date and time from the date window" />
+	    </span>
+
+	<script>
+		$('#atdPortOfCallDate').datetimepicker({dateFormat : 'dd/mm/yy',	timeFormat : 'HH:mm',changeYear: true,yearRange: '-100:+10'});
+		$('#atdPortOfCallDate_a').datetimepicker({dateFormat : 'dd/mm/yy',	timeFormat : 'HH:mm',changeYear: true,yearRange: '-100:+10'});
+	</script></div><div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+	<label class="helplabel">ATA at port of discharge
+		
+			<span class="fa fa-info-circle helptooltip" title="Actual time that ship arrived at port of discharge"></span>
+	</label>
+		<span class="datetime"><input id="ataToPortCall" type="text" name="ataToPortCall" autocomplete="off" class="simpleTxtField" maxlength="19" title="Select date and time from the date window" />
+	    </span>
+
+	<script>
+		$('#ataToPortCall').datetimepicker({dateFormat : 'dd/mm/yy',	timeFormat : 'HH:mm',changeYear: true,yearRange: '-100:+10'});
+		$('#ataToPortCall_a').datetimepicker({dateFormat : 'dd/mm/yy',	timeFormat : 'HH:mm',changeYear: true,yearRange: '-100:+10'});
+	</script></div></div><span id="organisationPanel"><div class="row"><div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+	<label for="organisationNameValue" class="helplabel">Forwarder name at port of loading
+		
+			<span class="fa fa-info-circle helptooltip" title="The local forwarder/importer at the port of discharge"></span>
+	</label><span id="organisationNameValue" class="outputField">SCK Operations</span></div><div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+	<label for="organisationPhoneValue" class="helplabel">Phone
+		
+			<span class="fa fa-info-circle helptooltip" title="The phone number with the international prefix code."></span>
+	</label><span id="organisationPhoneValue" class="outputField"></span></div><div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+	<label for="organisationFaxValue" class="helplabel">Fax
+		
+			<span class="fa fa-info-circle helptooltip" title="Fax number with the international prefix code."></span>
+	</label><span id="organisationFaxValue" class="outputField"></span></div><div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+	<label for="organisationEmailValue" class="helplabel">Email
+		
+			<span class="fa fa-info-circle helptooltip" title="E-mail address "></span>
+	</label><span id="organisationEmailValue" class="outputField"></span></div></div></span>
+
+            </fieldset>
+
+            
+
+
+            
+
+            <fieldset class="groupData"><input id="selectShipBtn" type="submit" name="selectShipBtn" value="" style="display:none" onclick="mojarra.ab(this,event,'action','@form','@all');return false" /><div class="row"><div class="col-lg-3 col-md-3  col-sm-6  col-xs-12">
+	<label for="ship" class="helplabel">Ship
+		<span class="error">*</span>
+			<span class="fa fa-info-circle helptooltip" title="Name of the ship in the ship registry"></span>
+	</label><div class="suggestbox">
+
+        <script>
+
+            $(document).ready(function() {
+                $('#ship_span>input').tooltip({
+                    html: true
+                });
+
+                //attach autocomplete
+                $('#ship_span>input').autocomplete({
+                    delay: 1,
+                    //define callback to format results
+                    source: function (request, response) {
+                        $.getJSON('/ectn-sub/rest/rest/suggestShips?imoNumber=' + $('#ship_span>input').val() + '&vesselName=' + $('#ship_span>input').val() , request, function(result) {
+                            response($.map(result, function(item) {
+                                return {
+                                    label: item.shipName + '(' + item.imoNumber+ ')',
+                                    value: item.shipName + '(' + item.imoNumber+ ')'
+                                }
+                            }));
+                        });
+                    },
+
+                    //define select handler
+                    select : function(event, ui) {
+                        if (ui.item) {
+                            event.preventDefault();
+                            $('#ship_span>input').val(ui.item.value);
+                            $('#ship_span>input').data('tooltip',false).tooltip({ title: ui.item.label});
+                            return false;
+                        }
+                    }
+                });
+            });
+
+
+        </script>
+        <div class="row"><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="input-group" id="ship_span"><input id="ship_outer" type="text" name="ship_outer" autocomplete="off" value="" class="form-control simpleTxtField" />
+                    <span class="input-group-btn">
+                    <button class="btn btn-default NSWbtn1" type="button" id="ship_toggler">
+                        <span id="ship_s-img" class="fa fa-search" title="Click to open location search dialog"></span>
+                    </button>
+                </span>
+                </div></div>
+        </div>
+
+
+
+        <div id="ship_select_port_modal-dialog" class="modal fade bs-example-modal-lg" aria-hidden="true" role="dialog">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" aria-hidden="true" onclick="ship_close(); handlePortCallSelection();">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                            <h4 class="modal-title" id="myModalLabel"> Select a location</h4>
+                    </div>
+                    <div class="modal-body suggestLocationModal"><div id="ship_dialog" class="suggestbox">
+                                <input type="text" id="ship_inner" class="simpleTxtField" maxlength="5" autocomplete="off" /></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="ship_btnYes" class="btn btn-default" aria-hidden="true" onclick="ship_applySelectedValue(); handlePortCallSelection();">Apply</button>
+                        <button type="button" onclick="ship_close()" aria-hidden="true" class="btn btn-default">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+
+
+            function ship_applySelectedValue() {
+                $('#ship_outer').val($('#ship_inner').val());
+                $('#ship_select_port_modal-dialog').modal('hide');
+            }
+
+            function ship_close(){
+                $('#ship_select_port_modal-dialog').modal('hide');
+            }
+
+            $(document).ready(function() {
+                $("#select_port_modal-dialog").modal({
+                    show: false,
+                    backdrop: 'static'
+                });
+                $('#ship_toggler').click(function(){
+                    $('#ship_select_port_modal-dialog').modal('show');
+
+                });
+
+                $('#ship_select_port_modal-dialog .modal-content').on('hidden.bs.modal', function(){
+                    $(this).remove();
+                });
+
+                $('#ship_select_port_modal-dialog').on('shown.bs.modal', function () {
+                    $('#ship_inner').val($('#ship_span>input').val());
+                    $('#ship_inner').focus();
+
+                    //attach autocomplete
+                    //autocomplete( "option", "appendTo", ".eventInsForm" )
+                    $('#ship_inner').autocomplete({
+                        appendTo: "#ship_select_port_modal-dialog",
+                        delay: 1,
+                        //define callback to format results
+                        source: function (request, response) {
+                            $.getJSON('/ectn-sub/rest/rest/suggestShips?vesselName=' + $('#ship_span>input').val() + '&imoNumber=' +  $('#ship_span>input').val(), request, function(result) {
+                                response($.map(result, function(item) {
+                                    return {
+                                        label: item.locationName + '(' + item.locode + ')',
+                                        value: item.locationName + '(' + item.locode + ')'
+                                    }
+                                }));
+                            });
+                        },
+
+                        //define select handler
+                        select : function(event, ui) {
+                            if (ui.item) {
+                                event.preventDefault();
+                                $('#ship_inner').val(ui.item.value);
+                                $('#ship_inner').blur();
+                                //$('#ship_locName').text(ui.item.label);
+                                $('#ship_span>input').data('tooltip',false)          // Delete the tooltip
+                                    .tooltip({ title: ui.item.label});
+
+                                return false;
+                            }
+                        }
+                    });
+                })
+            });
+        </script></div></div><div class="col-lg-3 col-md-2  col-sm-6  col-xs-12">
+	<label for="voyageNumber" class="helplabel">Voyage Number
+		
+			<span class="fa fa-info-circle helptooltip" title="The voyage number of the vessel"></span>
+	</label><input id="voyageNumber" type="text" name="voyageNumber" value="" class="simpleTxtField" maxlength="10" title="IMO number" /></div></div>
+
+            </fieldset><span id="consignmentListGroup">
+
+						<fieldset class="groupData"><div class="row"><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<legend class="groupDataTitle">Consignments
+				</legend></div></div><div class="activityData"><input id="consignmentId" type="hidden" name="consignmentId" /><input id="selectConsignmentBtn" type="submit" name="selectConsignmentBtn" value="" style="display:none" onclick="mojarra.ab(this,event,'action','@form','consignmentListGroup');return false" /><input id="deleteRowBtn" type="submit" name="deleteRowBtn" value="" style="display:none" onclick="mojarra.ab(this,event,'action','@form','consignmentListGroup');return false" /><input id="deleteAllBtn" type="submit" name="deleteAllBtn" value="" style="display:none" onclick="mojarra.ab(this,event,'action','@form','consignmentListGroup');return false" /><input id="clearBtn" type="submit" name="clearBtn" value="" style="display:none" onclick="mojarra.ab(this,event,'action','@form','consignmentListGroup');return false" /><div id="rowNavButtons" class="rowNavButtonsRight">
+		                            <span><a href="#" onclick="mojarra.jsfcljs(document.getElementById('form'),{'j_idt455':'j_idt455'},'');return false" class="btn  btn-sm NSWbtn3">Add</a>
+                                    </span>
+                                    <span class="rowButton"><span class="btn  btn-sm NSWbtn3">Delete all</span>
+                                    </span></div>		
+								<table id="consignmentTable" class="display largeTable">
+									<thead>
+										<tr>
+                                            <th data-priority="3">Cargo Type</th>
+											
+                                            
+											
+											
+                                            <th data-priority="1"></th>
+										</tr>
+									</thead>
+									<tbody>
+									</tbody>
+								</table><input id="dataTablePageNumber" type="hidden" name="dataTablePageNumber" value="0" />
+							
+								<script>	
+									 var table = $('#consignmentTable').DataTable({
+									    	"searching": false,
+									      	"order": [[ 0, "asc" ]],
+									    	"columnDefs": [{ "orderable": false, "targets": -1 }], //removes sorting function from last column
+									  		"dom": 'frtlip',
+									  		"responsive": true,
+									  		"autoWidth": false,
+                                             // Code used to show or hide the datatable pagination or datatable pagination info
+                                             // depending on datatable length
+                                             "fnDrawCallback": function(oSettings) {
+                                                 if (oSettings._iDisplayLength >= oSettings.fnRecordsDisplay()) {
+                                                     $(oSettings.nTableWrapper).find('.dataTables_paginate').hide();
+                                                     $(oSettings.nTableWrapper).find('.dataTables_info').hide();
+													 $(oSettings.nTableWrapper).find('.dataTables_length').hide();
+                                                 } else {
+                                                     $(oSettings.nTableWrapper).find('.dataTables_paginate').show();
+                                                     $(oSettings.nTableWrapper).find('.dataTables_info').show();
+													 $(oSettings.nTableWrapper).find('.dataTables_length').show();
+                                                 }
+                                             }
+									    });
+									 
+									 table.page(0).draw(false);
+									 
+									 function handleConsignmentSelection(itemId) {
+		                                    $('#consignmentId').val(itemId);
+		                                    $('#dataTablePageNumber').val(table.page.info().page);
+		                                    $('#selectConsignmentBtn').click();
+		                                }
+								</script></div>
+						</fieldset></span><span id="totals">
+                <fieldset class="groupData"><div class="row"><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<legend class="groupDataTitle">Totals
+				</legend></div></div><div class="row"><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+	<label for="sumContainers" class="helplabel">Total Containers
+		
+			<span class="fa fa-info-circle helptooltip" title="The total number of containers on the BL"></span>
+	</label><input id="sumContainers" type="text" name="sumContainers" class="simpleTxtField" maxlength="30" readonly="readonly" /></div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+	<label for="sumCars" class="helplabel">Total Cars
+		
+			<span class="fa fa-info-circle helptooltip" title="The total number of cars"></span>
+	</label><input id="sumCars" type="text" name="sumCars" class="simpleTxtField" maxlength="30" readonly="readonly" /></div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+	<label for="totalOceanFreight" class="helplabel">Ocean freight
+		
+			<span class="fa fa-info-circle helptooltip" title="The total value of the ocean freight"></span>
+	</label><input id="totalOceanFreight" type="text" name="totalOceanFreight" class="simpleTxtField" maxlength="30" readonly="readonly" /></div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+	<label for="totalGoodsValue" class="helplabel">Value of goods
+		
+			<span class="fa fa-info-circle helptooltip" title="The total value of the goods on the invoice"></span>
+	</label><input id="totalGoodsValue" type="text" name="totalGoodsValue" class="simpleTxtField" maxlength="30" readonly="readonly" /></div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+	<label for="totalAddCharges" class="helplabel">Total add charges
+		
+			<span class="fa fa-info-circle helptooltip" title="The extra charges such as insurance, THC, …"></span>
+	</label><input id="totalAddCharges" type="text" name="totalAddCharges" class="simpleTxtField" maxlength="30" readonly="readonly" /></div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+	<label for="visaCurrency" class="helplabel">Currency
+		
+			<span class="fa fa-info-circle helptooltip" title="The currency of the value of the goods and freight"></span>
+	</label><input id="visaCurrency" type="text" name="visaCurrency" value="" class="simpleTxtField" maxlength="30" readonly="readonly" /></div></div>
+                </fieldset></span>
+
+            <fieldset class="groupData"><div class="row"><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<legend class="groupDataTitle">ECTN
+				</legend></div></div><div class="row"><div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+	<label for="comments" class="helplabel">ECTN Points (in Εuro)
+		
+			<span class="fa fa-info-circle helptooltip" title="The number of points needed to validate the ECTN"></span>
+	</label><input type="text" name="j_idt552" value="0.0" class="simpleTxtField" readonly="readonly" /></div><div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+	<label for="comments" class="helplabel">Number of Corrections of ECTN
+		
+			<span class="fa fa-info-circle helptooltip" title="Refers to the version number: V0, V1, V2, …"></span>
+	</label><span class="outputField"></span></div><div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+	<label for="comments" class="helplabel">ECTN rejection cost (in Euro)
+		
+			<span class="fa fa-info-circle helptooltip" title="The cost to reopen the ECTN, which is 20% of the original cost of the ECTN"></span>
+	</label><span class="outputField">0.0</span></div></div>
+            </fieldset><span id="userCommunication">
+                <fieldset class="groupData"><input id="addShipCallCommentBtn" type="submit" name="addShipCallCommentBtn" value="" style="display:none" onclick="mojarra.ab(this,event,'action','@form',0);return false" /><input id="deleteShipCallCommentBtn" type="submit" name="deleteShipCallCommentBtn" value="" style="display:none" onclick="mojarra.ab(this,event,'action','@form',0);return false" /><input id="selectedCommentItemId" type="hidden" name="selectedCommentItemId" /><div class="row"><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<legend class="groupDataTitle">User Communication
+				</legend></div></div><div id="userCommunicationPanel"><div class="row"><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+	<label for="subject" class="helplabel">Subject
+		
+			<span class="fa fa-info-circle helptooltip" title="Subject of the message"></span>
+	</label><input id="subject" type="text" name="subject" value="" class="simpleTxtField" maxlength="255" /></div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+	<label for="remarks" class="helplabel">Remarks
+		
+			<span class="fa fa-info-circle helptooltip" title="The comments you wish to add as extra information"></span>
+	</label><input id="remarks" type="text" name="remarks" value="" class="simpleTxtField" maxlength="255" /></div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+	<label for="addCommentBtn" class="helplabel">Add
+		
+	</label>
+								<button id="addCommentBtn" type="button" class="btn btn-default btn-xs actionBtn" onclick="addCommentFn();">
+									<span aria-hidden="true" class="glyphicon glyphicon-plus"></span>
+								</button></div></div>
+						<br /><div class="row"><span class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<table id="userCommunicationTable" class="display largeTable">
+									<thead>
+										<tr>
+											<th data-priority="1">Subject</th>
+											<th data-priority="2">Remarks</th>
+											<th data-priority="3">Modified date</th>
+											<th data-priority="3">Modified by</th>
+												<th></th>
+										</tr>
+									</thead>
+									<tbody>
+									</tbody>
+								</table>
+								<script>
+									function addCommentFn(){
+										$('#addShipCallCommentBtn').click();
+									}
+									$('#userCommunicationTable').dataTable({
+										"searching": false,
+										"order": [[ 2, "desc" ]],
+										"columnDefs": [{ "orderable": false, "targets": 2 }],
+										"dom": 'frtlip',
+										"responsive": true,
+										"autoWidth": false,
+										// Code used to show or hide the datatable pagination or datatable pagination info
+										// depending on datatable length
+										"fnDrawCallback": function(oSettings) {
+											if (oSettings._iDisplayLength >= oSettings.fnRecordsDisplay()) {
+												$(oSettings.nTableWrapper).find('.dataTables_paginate').hide();
+												$(oSettings.nTableWrapper).find('.dataTables_info').hide();
+												$(oSettings.nTableWrapper).find('.dataTables_length').hide();
+											} else {
+												$(oSettings.nTableWrapper).find('.dataTables_paginate').show();
+												$(oSettings.nTableWrapper).find('.dataTables_info').show();
+												$(oSettings.nTableWrapper).find('.dataTables_length').show();
+											}
+										}
+									});
+								</script></span></div></div>
+                </fieldset></span><span id="attachments">
+                <fieldset class="groupData"><div class="row"><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<legend class="groupDataTitle">Attachments
+				</legend></div></div><div class="row"><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><div class="attachmentsPanel"><div class="row"><div class="col-lg-10 col-md-10 col-sm-6 col-xs-12"></div><div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 text-right"><input type="submit" name="j_idt655" value="Edit attachments" class="btn btn-sm NSWbtn3" onclick="showAttachments('', 'CONSIGNMENT')" /></div></div></div></div></div>
+                </fieldset></span>
+
+		</div>
+		<div class="modal bs-example-modal-lg fade" id="viewAttachmentsModal" aria-labelledby="viewAttachmentsLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							<span aria-hidden="true">x</span>
+						</button>
+						<h4 class="modal-title" id="viewAttachmentsLabel">Attachments</h4>
+					</div>
+					<div class="modal-body"><div id="attachmentsGroup" class="activityData">
+							<table id="attachmentsTable" class="display largeTable">
+								<thead>
+									<tr>
+										<th data-priority="1">Type</th>
+										<th data-priority="2">Name</th>
+										<th data-priority="2"></th>
+									</tr>
+								</thead>
+								<tbody>
+								</tbody>
+							</table><input id="deleteAttachmentBtn" type="submit" name="deleteAttachmentBtn" value="" style="display:none" /></div><div class="row attachmentsControls"><div class="col-lg-6 col-md-6 col-sm-8 col-xs-8"><select name="j_idt680" size="1">	<option value="6">DOCUMENT_6</option>
+	<option value="5">DOCUMENT_5</option>
+	<option value="4">DOCUMENT_4</option>
+	<option value="3">DOCUMENT_3</option>
+	<option value="2">DOCUMENT_2</option>
+	<option value="1">DOCUMENT_1</option>
+</select></div>
+
+							<input name="attachmentFile" type="file" /></div><div class="row"><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<span class="clearForm"><a href="#" onclick="mojarra.jsfcljs(document.getElementById('form'),{'j_idt686':'j_idt686'},'');return false" class="btn btn-sm NSWbtn3">Update</a>
+								</span></div></div>
+
+						<script>
+							$(document).ready(function() {
+								$('#attachmentsTable').dataTable({
+									"searching" : false,
+                                    "dom": 'frtlip',
+                                    "responsive": true,
+                                    "autoWidth": false,
+                                    // Code used to show or hide the datatable pagination or datatable pagination info
+                                    // depending on datatable length
+                                    "fnDrawCallback": function(oSettings) {
+                                        if (oSettings._iDisplayLength >= oSettings.fnRecordsDisplay()) {
+                                            $(oSettings.nTableWrapper).find('.dataTables_paginate').hide();
+                                            $(oSettings.nTableWrapper).find('.dataTables_info').hide();
+											$(oSettings.nTableWrapper).find('.dataTables_length').hide();
+                                        } else {
+                                            $(oSettings.nTableWrapper).find('.dataTables_paginate').show();
+                                            $(oSettings.nTableWrapper).find('.dataTables_info').show();
+											$(oSettings.nTableWrapper).find('.dataTables_length').show();
+                                        }
+                                    }
+								});
+							});
+						</script>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div><input id="attachmentId" type="hidden" name="attachmentId" value="" /><input id="attachmentGroup" type="hidden" name="attachmentGroup" value="CONSIGNMENT" />
+
+	<script>
+		function showAttachments(shipCallNumber, dataGroup) {
+			$('#selectedShipCallNumber').val(shipCallNumber);
+			$('#attachmentGroup').val(dataGroup);
+			setModal('#viewAttachmentsModal');
+		}
+
+		function setAttachmentId(attachmentId) {
+			$('#attachmentId').val(attachmentId);
+		}
+	</script>
+			<div class="modal fade" id="viewHistoryModal" aria-labelledby="viewHistoryLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">
+								<span aria-hidden="true">x</span>
+							</button>
+							<h4 class="modal-title" id="viewHistoryLabel">Notification history</h4>
+						</div>
+						<div class="modal-body"><div class="activityData">
+								<table id="messageHistoryTable" class="display">
+									<thead>
+										<tr>
+											<th>User</th>
+											<th>Date</th>
+										</tr>
+									</thead>
+									<tbody>
+									</tbody>
+								</table></div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+						<script>
+							$(document).ready(function() {
+							    $('#messageHistoryTable').dataTable({
+							    	"searching": false,
+							    	"bSort": false,
+							    	"columnDefs": [
+							    		{ "orderable": false, "targets": 0 },//removes sorting function from 1st column
+							    		{ "orderable": false, "targets": 1 } //removes sorting function from 2nd column
+							  		],
+							  		"dom": 'frtlip',
+							  		"autoWidth": false,
+                                    // Code used to show or hide the datatable pagination or datatable pagination info
+                                    // depending on datatable length
+                                     "fnDrawCallback": function(oSettings) {
+                                         if (oSettings._iDisplayLength >= oSettings.fnRecordsDisplay()) {
+                                             $(oSettings.nTableWrapper).find('.dataTables_paginate').hide();
+                                             $(oSettings.nTableWrapper).find('.dataTables_info').hide();
+											 $(oSettings.nTableWrapper).find('.dataTables_length').hide();
+                                         } else {
+                                             $(oSettings.nTableWrapper).find('.dataTables_paginate').show();
+                                             $(oSettings.nTableWrapper).find('.dataTables_info').show();
+											 $(oSettings.nTableWrapper).find('.dataTables_length').show();
+                                         }
+                                     }
+							    });
+							});
+						</script>
+					</div>
+				</div>
+			</div> 
+			<div class="modal fade bs-example-modal-lg" id="viewDecisionsModal" role="dialog" aria-labelledby="viewDecisionsLabel">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">
+								<span aria-hidden="true">x</span>
+							</button>
+							<h4 class="modal-title" id="viewDecisionsLabel">Decisions from all authorities</h4>
+						</div>
+						<div class="modal-body"><div class="activityData">
+									<div class="row">
+										<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><span class="outputText">Approval status: </span>
+										</div>
+									</div>
+									
+									<div class="row">
+										<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><span class="outputText"></span>
+										</div>
+									</div>
+									
+									<table id="decisionsTable" class="display">
+										<thead>
+											<tr>
+												<th data-priority="1"></th>
+											</tr>
+										</thead>
+										<tbody>
+										</tbody>
+									</table></div>
+					
+							<script>
+								$(document).ready(function() {
+								    $('#decisionsTable').dataTable({
+								    	"searching": false,
+								    	"bSort" : false,
+								    	"language": {"emptyTable": "Pending decisions from authorities"},
+								    	"dom": 'frtlip',
+								    	"responsive": true,
+								    	"autoWidth": false,
+                                        // Code used to show or hide the datatable pagination or datatable pagination info
+                                        // depending on datatable length
+                                         "fnDrawCallback": function(oSettings) {
+                                             if (oSettings._iDisplayLength >= oSettings.fnRecordsDisplay()) {
+                                                 $(oSettings.nTableWrapper).find('.dataTables_paginate').hide();
+                                                 $(oSettings.nTableWrapper).find('.dataTables_info').hide();
+												 $(oSettings.nTableWrapper).find('.dataTables_length').hide();
+                                             } else {
+                                                 $(oSettings.nTableWrapper).find('.dataTables_paginate').show();
+                                                 $(oSettings.nTableWrapper).find('.dataTables_info').show();
+												 $(oSettings.nTableWrapper).find('.dataTables_length').show();
+                                             }
+                                         }
+								    });
+								    $('table[id^=agentsTable]').dataTable({
+								    	"searching": false,
+								    	"order": [[ 1, "desc" ]],
+								    	"columnDefs": [],
+								    	"dom": 'frtlip',
+								    	"responsive": true,
+								    	"autoWidth": false,
+                                        // Code used to show or hide the datatable pagination or datatable pagination info
+                                        // depending on datatable length
+                                         "fnDrawCallback": function(oSettings) {
+                                             if (oSettings._iDisplayLength >= oSettings.fnRecordsDisplay()) {
+                                                 $(oSettings.nTableWrapper).find('.dataTables_paginate').hide();
+                                                 $(oSettings.nTableWrapper).find('.dataTables_info').hide();
+												 $(oSettings.nTableWrapper).find('.dataTables_length').hide();
+                                             } else {
+                                                 $(oSettings.nTableWrapper).find('.dataTables_paginate').show();
+                                                 $(oSettings.nTableWrapper).find('.dataTables_info').show();
+												 $(oSettings.nTableWrapper).find('.dataTables_length').show();
+                                             }
+                                         }
+								    });
+								});
+							</script>
+	
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+						<div class="modal fade" id="confirmSubmissionModal" aria-labelledby="confirmSubmissionLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+									</div>
+									<div class="modal-body"><div class="activityData">
+											<div class="row">
+												<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><span class="outputText">You are about to request validation for the ECTN and will no longer be able to perform further edits. Do you wish to proceed?</span>
+												</div>
+											</div></div>
+									</div>
+									<div class="modal-footer"><input type="submit" name="j_idt738" value="Yes" class="btn btn-default NSWbtn3 submit" />
+										<button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+									</div>
+								</div>
+							</div>
+						</div><input id="lastModalVisible" type="hidden" name="lastModalVisible" value="#viewAttachmentsModal" />
+					
+			       
+			        
+				</div>
+					
+			</div><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="e1s2" />
+</form>
+
+			<div class="row footer">
+				<div class="col-lg-8 col-md-8 col-sm-9 col-xs-12">
+					<span class="text-nowrap">Benin, 2017</span>
+				</div>
+			</div>
+
+		</div>
+
+		<script>
+			if (typeof jsf != 'undefined') {
+				jsf.ajax.addOnEvent(function(data) {
+					var ajaxstatus = data.status; // Can be "begin", "complete" and "success"
+					switch (ajaxstatus) {
+						case "begin": // This is called right before ajax request is been sent.
+							document.body.style.cursor = 'wait';
+							break;
+						case "complete": // This is called right after ajax response is received.
+							document.body.style.cursor = 'auto';
+							break;
+						case "success": // This is called when ajax response is successfully processed.
+							document.body.style.cursor = 'auto';
+							break;
+					}
+				});
+			}
+
+			$(document).ready(function(){
+				$('.dropdown-submenu a.test').on("click", function(e){
+					$(this).next('ul').toggle();
+					e.stopPropagation();
+					e.preventDefault();
+				});
+
+				var modalName = $('#lastModalVisible').val();
+				if (modalName != '') {
+					$(modalName).modal('show');
+					setModal('');
+				}
+			});
+
+			function setModal(nodeId) {
+				$('#lastModalVisible').val(nodeId);
+			}
+		</script></body>
+</html>
